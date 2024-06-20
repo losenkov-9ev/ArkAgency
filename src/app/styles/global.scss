@@ -1,0 +1,44 @@
+:root {
+  --doc-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 !important;
+}
+
+.container {
+  max-width: 1428px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  overflow-x: clip !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  b {
+    font-weight: 700;
+  }
+
+  &.stop-page-scroll {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+  }
+}
+
+section {
+  overflow-x: clip !important;
+}

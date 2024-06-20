@@ -1,0 +1,86 @@
+.questions {
+  padding: 189px 0;
+  background-image: url('../@img/global/Questions-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__info {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 708px;
+    width: 100%;
+    span {
+      color: $accent;
+    }
+  }
+
+  &__logic {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .defaultButton {
+      margin: 0 auto;
+    }
+    &-title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+}
+
+.questions__logic-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px; /* Размер текста */
+  user-select: none;
+}
+
+.questions__logic-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px; /* Отступ между чекбоксом и текстом */
+  position: relative;
+}
+
+.questions__logic-checkbox input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.questions__logic-checkbox input:checked ~ .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 12px;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none"%3E%3Cpath d="M1 6L5.5 11L16 0.5" stroke="black"/%3E%3C/svg%3E')
+    no-repeat center center;
+  background-size: contain;
+}
+
+.questions__logic-checkbox + .questions__logic-checkbox {
+  margin-top: 24px;
+}

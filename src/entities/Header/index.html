@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="header__inner container">
+    <div class="header__top">
+      <a href="#" class="header__logo">
+        <img src="@img/global/logo.svg" alt="">
+      </a>
+      @@include('../../shared/Search/index.html')
+      <div class="header__contacts">
+        <a class="header__contacts-phone" href="tel:+7 (835) 758 44 56">+7 (835) 758 44 56</a>
+        @@include('../../shared/Button/DefaultButton.html', {
+          text: "ОСТАВИТЬ ЗАЯВКУ",
+          arrow: "false",
+          size: "small",
+          maxWidth: "234px",
+          color: "accent-light",
+          hoverColor: "hover--whiteBorderShadow",
+        })
+      </div>
+    </div>
+    <nav class="header__menu">
+      <a href="#modal-implementation" class="header__menu-link has-menu open-modal">Внедрение</a>
+      <a href="#modal-sale" class="header__menu-link has-menu open-modal">Продажа лицензий</a>
+      <a href="#modal-integration" class="header__menu-link has-menu open-modal">Интеграции CRM</a>
+      <a href="#modal-setup" class="header__menu-link has-menu open-modal">Настройка CRM</a>
+      <a href="#modal-about" class="header__menu-link has-menu open-modal">Про CRM</a>
+      <a href="#modal-case" class="header__menu-link has-menu open-modal">Кейсы</a>
+      <a href="#" class="header__menu-link">О нас</a>
+      <a href="#" class="header__menu-link"><b>Контакты</b></a>
+    </nav>
+  </div>
+</header>

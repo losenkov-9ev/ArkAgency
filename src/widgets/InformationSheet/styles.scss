@@ -1,0 +1,25 @@
+.informationSheet {
+  margin-bottom: 120px;
+  .sectionHead {
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 113.7%;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  &__item + .informationSheet__item {
+    margin-top: 25px;
+  }
+  &__item-icon {
+    flex: none;
+    width: 81px;
+    height: 81px;
+  }
+}

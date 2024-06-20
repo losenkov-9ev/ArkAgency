@@ -1,0 +1,21 @@
+.sectionHead {
+  margin-bottom: 60px;
+  padding-bottom: 12px;
+  border-bottom: 2.5px solid #909090;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &__decor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $light-accent;
+    }
+  }
+}

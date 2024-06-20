@@ -1,0 +1,133 @@
+.solution {
+  margin-bottom: 80px;
+  .sectionHead {
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__textImage {
+    width: 290px;
+    height: 290px;
+    flex: none;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content-tabs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 18px;
+    padding-left: 75px;
+
+    div {
+      background-color: #59000a;
+      border: 1px solid #59000a;
+      color: #fff;
+    }
+  }
+  &__content-tabsItem {
+    width: 163px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+    border: 1px solid #242424;
+    color: #242424;
+  }
+
+  &__content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__contentImage {
+    width: 362px;
+    height: 362px;
+
+    flex: none;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content-tip {
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 115px;
+    margin-left: -10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 110px;
+      width: 55px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url('../@img/icons/tip-arrow.svg');
+      left: 50px;
+      top: -70px;
+    }
+  }
+  &__content-box {
+    display: flex;
+    gap: 30px;
+    line-height: 29px;
+  }
+  &__content-tabs {
+    display: flex;
+  }
+  &__content-text {
+    p:last-of-type {
+      margin-top: 30px;
+    }
+    ul {
+      padding-right: 10px;
+      list-style: none;
+    }
+    li {
+      padding-left: 10px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #242424;
+      }
+    }
+  }
+  .defaultButton {
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+}

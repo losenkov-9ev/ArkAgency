@@ -1,0 +1,27 @@
+<div class="form">
+  <div class="form__inner container">
+    <div class="form__title">
+      Сформируем предложение <br>
+      под ваш бизнес <br>
+      БЕСПЛАТНО 
+    </div>
+    <div class="form__subtitle">
+      после консультации
+    </div>
+    <form class="form__box">
+      <div class="form__inputWrapper">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="text" class="form__input phone-input" placeholder="Номер телефона">
+      </div>
+
+      @@include('../../shared/Button/DefaultButton.html', {
+        text: "позвоните мне",
+        arrow: "false",
+        size: "normal",
+        maxWidth: "422px",
+        color: "accent",
+        hoverColor: "hover--whiteBorderShadow",
+      })
+    </form>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+@keyframes textSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about {
+  margin-bottom: 120px;
+  &__inner {
+    position: relative;
+  }
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__image {
+    position: relative;
+    width: 765px;
+    height: 765px;
+    margin-left: -243px;
+  }
+  &__imageText {
+    width: 765px;
+    height: 765px;
+    animation: textSpin 55s linear infinite;
+  }
+  &__imagePlanet {
+    width: 568px;
+    height: 547px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    max-width: 883px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 2.6fr 3fr;
+    grid-gap: 56px 114px;
+    margin-left: auto;
+  }
+  &__item-value {
+    font-size: 116px;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 12px;
+    border-bottom: 2px solid $light-accent;
+    color: #242424;
+
+    margin-bottom: 8px;
+
+    sup {
+      font-size: 58px;
+    }
+  }
+}

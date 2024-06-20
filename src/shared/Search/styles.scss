@@ -1,0 +1,150 @@
+.search-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -100px;
+  z-index: $z-index-searchBg;
+  background-color: rgba(#242424, 0.3);
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+
+  &.opened {
+    opacity: 1;
+  }
+}
+.search {
+  max-width: 836px;
+  width: 100%;
+  border: 2.42px solid rgb(144, 144, 144);
+  border-radius: 32px;
+  // overflow: hidden;
+  position: relative;
+  z-index: $z-index-search;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &.dropdown-opened {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+
+    .search-dropdown {
+      padding-bottom: 20px;
+      padding-top: 10px;
+      border: 2.42px solid rgb(144, 144, 144);
+      opacity: 1;
+      height: auto;
+
+      transition: opacity 0.3s, padding 0.3s;
+    }
+    .search-input {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  }
+
+  &-dropdown {
+    right: -2px;
+    left: -2px;
+    position: absolute;
+    background-color: #fff;
+    z-index: $z-index-search;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    overflow: hidden;
+
+    padding: 0;
+    height: 0;
+    border-top: 0;
+    opacity: 0;
+
+    &__item {
+      max-width: 100%;
+      width: 100%;
+      padding: 5px 30px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #909090;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $secondary;
+        color: #fff;
+      }
+    }
+    &__item + .search-dropdown__item {
+      margin-top: 8px;
+    }
+  }
+  &-input {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+
+    padding: 19px 30px;
+    padding-right: 200px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    outline: none;
+    border-radius: 32px;
+
+    &::placeholder {
+      color: #909090;
+    }
+  }
+  &-button {
+    padding: 6px 32px;
+
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+
+    background-color: $light-accent;
+    border-radius: 40px;
+
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+  &-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  &-clear {
+    padding: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+
+    svg path {
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      svg path {
+        fill: #000;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}

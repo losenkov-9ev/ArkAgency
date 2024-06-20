@@ -1,0 +1,25 @@
+<div class="videoReviews">
+  <div class="videoReviews__inner container">
+    @@include('../../shared/SectionHead/index.html', {
+      "text": "они нам доверяют настолько, что показывают свои лица"
+    })
+    <div class="videoReviews__box">
+      <a href="https://youtu.be/3V-pYCGx0C4?si=Qyh3DIHCvfuH_C8T" data-fancybox class="videoReviews__item">
+        <img class="videoReviews__item-preview" src="@img/content/preview-video-1.jpg" alt="">
+        <img class="videoReviews__item-play" src="@img/icons/play-button.png" alt="">
+      </a>
+      <a href="https://youtu.be/3V-pYCGx0C4?si=Qyh3DIHCvfuH_C8T" data-fancybox class="videoReviews__item">
+        <img class="videoReviews__item-preview" src="@img/content/preview-video-2.jpg" alt="">
+        <img class="videoReviews__item-play" src="@img/icons/play-button.png" alt="">
+      </a>
+    </div>
+    @@include('../../shared/Button/DefaultButton.html', {
+      text: "посмотреть ещё",
+      arrow: "with-arrow",
+      size: "normal",
+      maxWidth: "422px",
+      color: "white-border",
+      hoverColor: "hover--accentLightShadow",
+    })
+  </div>
+</div>

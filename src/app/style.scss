@@ -1,0 +1,34 @@
+// libs
+@import './styles/libs/fancybox';
+
+// app
+@import './styles/reset';
+@import './styles/variables';
+@import './styles/global';
+@import './styles/ui-kit';
+
+// shared
+@import '../shared/Button/styles';
+@import '../shared/SectionHead/styles';
+@import '../shared/Search/styles';
+
+// entities
+@import '../entities/Header/styles';
+@import '../entities/Footer/styles';
+@import '../entities/Modal/styles';
+@import '../entities/MenuModal/styles';
+
+// widgets
+@import '../widgets/Top/styles';
+@import '../widgets/Profit/styles';
+@import '../widgets/Questions/styles';
+@import '../widgets/Gallery/styles';
+@import '../widgets/VideoReviews/styles';
+@import '../widgets/Form/styles';
+@import '../widgets/About/styles';
+@import '../widgets/FAQ/styles';
+@import '../widgets/MenuModalChildren/styles';
+@import '../widgets/InformationSheet/styles';
+
+@import '../widgets/Problems/styles';
+@import '../widgets/Solution/styles';

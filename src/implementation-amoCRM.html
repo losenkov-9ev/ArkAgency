@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./app/head.html', {"title": "Внедрение AmoCRM"})
+  <body class="home-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('./entities/Header/index.html') 
+      @@include('./entities/MenuModal/index.html')
+      
+      @@include('./widgets/Top/index.html', { 
+        image: "@img/global/TopImage-implementation.jpg",
+        title: "<span>Внедрение</span> AmoCRM" 
+      }) 
+      @@include('./widgets/Problems/index.html')
+      @@include('./widgets/Solution/index.html')
+      @@include('./widgets/InformationSheet/index.html')
+      
+      @@include('./widgets/Questions/index.html') 
+      @@include('./widgets/Gallery/index.html')
+      @@include('./widgets/VideoReviews/index.html')
+      @@include('./widgets/Form/index.html')
+      @@include('./widgets/About/index.html')
+      @@include('./widgets/FAQ/index.html')
+
+      <!-- Footer section -->
+      @@include('./entities/Footer/index.html')
+      @@include('./entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

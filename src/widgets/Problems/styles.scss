@@ -1,0 +1,68 @@
+.problems {
+  margin-bottom: 120px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 113.7%;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    line-height: 29px;
+    margin-bottom: 20px;
+    p + p {
+      margin-top: 24px;
+    }
+  }
+
+  &__sum {
+    margin-bottom: 36px;
+    &-box {
+      margin-top: 30px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding-bottom: 70px;
+
+      &:last-child {
+        .problems__sum-itemLeft::before {
+          display: none;
+        }
+      }
+    }
+    &-itemLeft {
+      max-width: 556px;
+      width: 100%;
+      border-radius: 67px;
+      background-color: $secondary;
+      padding: 19px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+
+      &::before {
+        content: '+';
+        font-size: 60px;
+        color: #242424;
+        position: absolute;
+        bottom: -56px;
+        right: -27px;
+        font-weight: 700;
+      }
+    }
+    &-itemRight {
+      max-width: 838px;
+      width: 100%;
+      background-color: $light-accent;
+      color: #fff;
+      padding: 13px 26px;
+      border-radius: 48px;
+    }
+  }
+  .defaultButton {
+    margin: 0 auto;
+  }
+}

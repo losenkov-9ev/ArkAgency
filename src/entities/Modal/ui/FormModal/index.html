@@ -1,0 +1,41 @@
+<div class="modal micromodal-slide" id="form-modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="formModal">
+        <div class="formModal__image">
+          <img src="@img/global/modal-bg.jpg" alt="">
+        </div>
+        <div class="formModal__content">
+          <div class="formModal__title">
+            Оставить заявку
+          </div>
+          <div class="formModal__text">
+            Мы свяжемся с вами в ближайшее время
+          </div>
+          <form class="formModal__form">
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="Имя">
+            </div>
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="Телефон">
+            </div>
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="E-mail">
+            </div>
+            @@include('../../../../shared/Button/DefaultButton.html', {
+              text: "Отправить",
+              arrow: "false",
+              size: "normal",
+              maxWidth: "100%",
+              color: "accent",
+              hoverColor: "hover--accentLight",
+            })
+          </form>
+          <div class="formModal__policy">
+            Нажимая на кнопку вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

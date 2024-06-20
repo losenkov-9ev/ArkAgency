@@ -1,0 +1,55 @@
+<div class="about">
+  <div class="container">
+    @@include('../../shared/SectionHead/index.html', {
+      text: "о нашей студии"
+    })
+  </div>
+  <div class="about__inner">
+    <div class="about__image">
+      <img class="about__imagePlanet" src="@img/global/about-image.jpg" alt="">
+      <img class="about__imageText" src="@img/global/about-text.svg" alt="">
+    </div>
+    <div class="about__wrapper container">
+      <div class="about__content">
+        <div class="about__box">
+          <div class="about__item">
+            <div class="about__item-value"><span class="counter-item" data-counter-value="350">350</span><sup>+</sup></div>
+            <div class="about__item-text">
+              проектов <br>
+              за это время вытянули
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-value"><span class="counter-item" data-counter-value="7">7</span><sup>+</sup></div>
+            <div class="about__item-text">
+              лет <br>
+              внедряем CRM, автоматизируем продажи и маркетинг
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-value"><span class="counter-item" data-counter-value="15">15</span><sup>+</sup></div>
+            <div class="about__item-text">
+              отраслей <br>
+              в нашем опыте реализации проектов накопилось
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-value"><span class="counter-item" data-counter-value="1">1</span><sup>+</sup></div>
+            <div class="about__item-text">
+              месяц <br> 
+              бесплатной технической поддержки даём
+            </div>
+          </div>
+        </div>
+        @@include('../../shared/Button/DefaultButton.html', {
+          text: "подробнее",
+          arrow: "false",
+          size: "normal",
+          maxWidth: "385px",
+          color: "accent-light",
+          hoverColor: "hover--whiteBorder",
+        })
+      </div>
+    </div>
+  </div>
+</div>

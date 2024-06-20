@@ -1,0 +1,128 @@
+%whiteStyles {
+  background-color: #fff;
+  color: #000;
+
+  svg path {
+    fill: #000;
+  }
+}
+
+.defaultButton {
+  background-color: $accent;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 48.34px;
+  gap: 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  transition: all 0.3s;
+
+  &.small {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px;
+  }
+
+  &.normal {
+    font-size: 24px;
+    padding: 12px;
+    text-transform: none;
+  }
+
+  &.defaultButton.with-arrow {
+    .defaultButton__arrow {
+      display: block;
+    }
+  }
+  &__arrow {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $light-accent;
+  }
+
+  // UI-color
+  &.accent-light {
+    background-color: $light-accent;
+  }
+  &.white {
+    @extend %whiteStyles;
+  }
+  &.white-border {
+    border: 2px solid rgb(36, 36, 36);
+    @extend %whiteStyles;
+  }
+  &.white-fatBorder {
+    border: 8px solid rgb(36, 36, 36);
+    @extend %whiteStyles;
+  }
+  &.black {
+    background: rgb(31, 31, 31);
+    color: #fff;
+  }
+
+  &.hover--accent:hover {
+    background-color: $accent;
+  }
+  &.hover--accentLight:hover {
+    background-color: $light-accent;
+  }
+
+  &.hover--whiteBorderShadow:hover {
+    @extend %whiteStyles;
+    border: 2px solid rgb(36, 36, 36);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #000;
+  }
+  &.hover--whiteBorder:hover {
+    @extend %whiteStyles;
+    border: 2px solid rgb(36, 36, 36);
+    background-color: #fff;
+    color: #000;
+  }
+  &.hover--secondary:hover {
+    border: 2px solid #ffffff;
+    background: $secondary;
+    color: #fff;
+  }
+  &.hover--accentShadow:hover {
+    box-shadow: 0px 0px 15px 0px rgb(255, 255, 255, 0.1);
+    background-color: $accent;
+  }
+  &.hover--accentLightShadow:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    background-color: $light-accent;
+    border-color: transparent;
+
+    color: #fff;
+    svg path {
+      fill: #fff;
+    }
+  }
+  &.hover--accentWhiteShadow {
+    box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: #000;
+  }
+  &.hover--accentWhiteShadow {
+    box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: #000;
+  }
+  &.hover--lightBlack:hover {
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.25);
+    background-color: #242424;
+    color: #fff;
+  }
+}
