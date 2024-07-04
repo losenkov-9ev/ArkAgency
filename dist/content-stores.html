@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ArkAgency | stores</title>
+
+  <meta name="description" content="..." />
+
+  <!-- meta for IOS -->
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+
+  
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="shortcut icon" href="public/images/global/favicon.svg" type="image/x-icon" />
+<link rel="stylesheet" href="css/Content/content.min.css" type="text/css" media="all">
+</head>
+
+  <body class="content-page content-stores-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      <header class="header">
+  <div class="header__inner container">
+    <div class="header__top">
+      <a href="#" class="header__logo">
+        <img src="public/images/global/logo.svg" alt="">
+        <img class="header__logo--mobile" src="public/images/global/mobile-logo.jpg" alt="">
+      </a>
+      <div class="search-bg"></div>
+<div class="search">
+  <div class="search-wrapper">
+    <input type="text" class="search-input" placeholder="Поиск товаров, услуг, акций, новостей">
+    <input type="text" class="search-input search-input--mobile" placeholder="Поиск товаров, услуг и т.д.">
+    <div class="search-controls">
+      <button class="search-clear">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7035 11.2719C13.0988 11.6673 13.0988 12.3082 12.7035 12.7035C12.3082 13.0988 11.6673 13.0988 11.2719 12.7035L6.50139 7.93297L1.73085 12.7035C1.33553 13.0988 0.694594 13.0988 0.299275 12.7035C-0.096045 12.3082 -0.096045 11.6673 0.299275 11.2719L5.06981 6.50139L0.29649 1.72807C-0.09883 1.33275 -0.0988299 0.691809 0.29649 0.29649C0.691809 -0.0988299 1.33275 -0.09883 1.72807 0.29649L6.50139 5.06981L11.2747 0.29649C11.67 -0.09883 12.311 -0.0988299 12.7063 0.29649C13.1016 0.691809 13.1016 1.33275 12.7063 1.72807L7.93297 6.50139L12.7035 11.2719Z" fill="#909090"/>
+        </svg>  
+      </button>
+      <button class="search-button">
+        <span>АРК</span>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 50 50">
+          <path fill="#fff" d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-dropdown">
+    <a href="#" class="search-dropdown__item">
+      Внедрение  amoCRM
+    </a>
+    <a href="#" class="search-dropdown__item">
+      Внедрение  Битрикс 24
+    </a>
+    <a href="#" class="search-dropdown__item">
+      Внедрение  Roistat
+    </a>
+  </div>
+</div>
+      <div class="header__contacts">
+        <a class="header__contacts-phone" href="tel:+7 (835) 758 44 56">+7 (835) 758 44 56</a>
+        <button data-micromodal-trigger="form-modal" class="defaultButton small accent-light hover--whiteBorderShadow false" style="max-width: 234px;">
+  ОСТАВИТЬ ЗАЯВКУ
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+      </div>
+      <a href="#modal-headerMenu" class="header__burger open-modal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <nav class="header__menu">
+      <a href="#modal-implementation" class="header__menu-link has-menu open-modal">Внедрение</a>
+      <a href="#modal-sale" class="header__menu-link has-menu open-modal">Продажа лицензий</a>
+      <a href="#modal-integration" class="header__menu-link has-menu open-modal">Интеграции CRM</a>
+      <a href="#modal-setup" class="header__menu-link has-menu open-modal">Настройка CRM</a>
+      <a href="#modal-about" class="header__menu-link has-menu open-modal">Про CRM</a>
+      <a href="#modal-case" class="header__menu-link has-menu open-modal">Кейсы</a>
+      <a href="#" class="header__menu-link">О нас</a>
+      <a href="#" class="header__menu-link"><b>Контакты</b></a>
+    </nav>
+  </div>
+</header>
+      <div class="menuModal close-modal">
+  <div class="menuModalChildren" id="modal-implementation">
+  <div class="menuModalChildren__headLink">Внедрение</div>
+  <a href="#" class="menuModalChildren__link close-modal"> Внедрение amoCRM </a>
+  <a href="#" class="menuModalChildren__link close-modal"> Внедрение Битрикс24 </a>
+  <a href="#" class="menuModalChildren__link close-modal"> Внедрение RetailCRM </a>
+  <a href="#" class="menuModalChildren__link close-modal"> Внедрение Roistat </a>
+  <div class="menuModalChildren__link">Техподдержка</div>
+  <div class="menuModalChildren__submenu">
+    <a href="#" class="menuModalChildren__submenuLink close-modal">amoCRM поддержка</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Битрикс24 техподдержка</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Roistat поддержка</a>
+  </div>
+</div>
+
+  <div class="menuModalChildren" id="modal-integration">
+  <div class="menuModalChildren__headLink">Интеграции CRM</div>
+  <div class="menuModalChildren__box">
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">Интеграция с Битрикс24</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Авито</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal"
+          >с мессенджерами и соцсетями</a
+        >
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с телефонией</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с почтой</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Яндексом</a>
+      </div>
+      <div class="menuModalChildren__link">Интеграция с RetailCRM</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Битрикс</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Yakassa</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтами</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с складом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с чатом</a>
+      </div>
+    </div>
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">Интеграция с amoCRM</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с телефонией</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Power BI</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с почтой</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Битрикс</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Google</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с эквайрингом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Яндексом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Asterisk</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Авито</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с hh</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с МойСклад</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Jivosite</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Trello</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с мессенджерами</a>
+      </div>
+    </div>
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">Интеграция с Roistat</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Bitrix24</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Wazzup</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с hh</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Директом</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Метрикой</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Mango</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Elama</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с promo</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">с Avito</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="menuModalChildren" id="modal-setup" data-modal-gap="54">
+  <div class="menuModalChildren__headLink">Настройка CRM</div>
+  <div class="menuModalChildren__box">
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">amoCRM</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Эквайринг</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Воронка</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Телефония</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Автоматизация</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Форма</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Чат боты</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Задачи</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Заявки</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Касса</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Мобильная версия</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Десктоп</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Sensei</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Бизнес процессы</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Отдел продаж</a>
+      </div>
+    </div>
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">Битрикс24</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Права</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Лиды</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Бизнес Процессы</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Воронка</a>
+      </div>
+      <div class="menuModalChildren__link">Roistat</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Подключить Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Источники Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Цели Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Заявки Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика Roistat</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Речевая аналитика</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Сквозная аналитика</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Коллтрекинг</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Счётчик</a>
+      </div>
+    </div>
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">RetailCRM</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Клиенты</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Модули</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Заказы</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Ещё</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="menuModalChildren" id="modal-about" data-modal-gap="103">
+  <div class="menuModalChildren__headLink">Про CRM</div>
+  <div class="menuModalChildren__box">
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">Битрикс24</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Телефония</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Магазин</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Маркет</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Приложения</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Касса</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Воронки</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Оплата</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Как подключить</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Портал</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Автоматизация</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Синхронизация</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Экстранет</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Эквайринг</a>
+      </div>
+    </div>
+    <div class="menuModalChildren__column">
+      <div class="menuModalChildren__link">amoCRM</div>
+      <div class="menuModalChildren__submenu">
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Обучение</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Поддержка</a>
+        <a href="#" class="menuModalChildren__submenuLink close-modal">Разработка Виджетов</a>
+      </div>
+      <div class="menuModalChildren__link">RetailCRM</div>
+      <div class="menuModalChildren__link">Roistat</div>
+    </div>
+  </div>
+</div>
+
+  <div class="menuModalChildren" id="modal-sale">
+  <div class="menuModalChildren__headLink">Продажа лицензий</div>
+  <div class="menuModalChildren__link">Битрикс24 лицензия</div>
+  <div class="menuModalChildren__submenu">
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Сравнение тарифов Битрикс24</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Тарифы Облачный</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Тарифы Коробка</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Продление Битрикс24</a>
+  </div>
+  <div class="menuModalChildren__link">amoCRM стоимость</div>
+  <div class="menuModalChildren__submenu">
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Cтоимость лицензии</a>
+    <a href="#" class="menuModalChildren__submenuLink close-modal">Продление amoCRM</a>
+  </div>
+  <a href="#" class="menuModalChildren__link close-modal"> RetailCRM тарифы </a>
+  <a href="#" class="menuModalChildren__link close-modal"> Roistat цена </a>
+</div>
+
+  <div class="menuModalChildren" id="modal-case">
+  <div class="menuModalChildren__headLink">Кейсы</div>
+  <a href="#" class="menuModalChildren__link close-modal">Отзывы</a>
+  <a href="#" class="menuModalChildren__link close-modal">Решения</a>
+</div>
+
+  
+  <div class="headerMobile" id="modal-headerMenu">
+  <div class="headerMobile__menu">
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">
+        Внедрение
+        <svg
+          width="13"
+          height="8"
+          viewBox="0 0 13 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <mask
+              id="mask0_1955_1555"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="13"
+              height="8"
+            >
+              <path d="M0.904392 8H12.9922V0.74158H0.904392V8Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1955_1555)">
+              <path
+                opacity="0.5"
+                d="M6.97405 7.9994C7.18074 7.99403 7.37815 7.90552 7.52767 7.75118L12.7375 2.30606C12.897 2.1376 12.9885 1.90792 12.9921 1.66695C12.9957 1.42598 12.9112 1.19321 12.7568 1.01924C12.6811 0.933736 12.5905 0.865243 12.4902 0.817697C12.3899 0.770151 12.2818 0.744488 12.1723 0.742182C12.0628 0.739875 11.954 0.760971 11.852 0.804258C11.7501 0.847544 11.6571 0.912169 11.5783 0.994421L6.94866 5.83598L2.31783 0.994421C2.23875 0.911824 2.1453 0.846997 2.04289 0.803694C1.94047 0.760391 1.83113 0.73947 1.72118 0.742143C1.61124 0.744815 1.50288 0.771029 1.40237 0.819266C1.30186 0.867503 1.2112 0.936805 1.13564 1.02316C0.982902 1.19746 0.899701 1.42968 0.903997 1.66969C0.908295 1.90971 0.999744 2.13828 1.15861 2.30606L6.36845 7.75118C6.44871 7.83413 6.54356 7.89883 6.64737 7.94147C6.75119 7.9841 6.86307 8.0038 6.97405 7.9994Z"
+                fill="#242424"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="headerMobile__item-menu">
+        <a href="#" class="menuModalChildren__link close-modal"> Внедрение amoCRM </a>
+        <a href="#" class="menuModalChildren__link close-modal"> Внедрение Битрикс24 </a>
+        <a href="#" class="menuModalChildren__link close-modal"> Внедрение RetailCRM </a>
+        <a href="#" class="menuModalChildren__link close-modal"> Внедрение Roistat </a>
+        <div class="menuModalChildren__link">Техподдержка</div>
+        <div class="menuModalChildren__submenu">
+          <a href="#" class="menuModalChildren__submenuLink close-modal">amoCRM поддержка</a>
+          <a href="#" class="menuModalChildren__submenuLink close-modal">Битрикс24 техподдержка</a>
+          <a href="#" class="menuModalChildren__submenuLink close-modal">Roistat поддержка</a>
+        </div>
+      </div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">
+        Интеграции CRM
+        <svg
+          width="13"
+          height="8"
+          viewBox="0 0 13 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <mask
+              id="mask0_1955_1555"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="13"
+              height="8"
+            >
+              <path d="M0.904392 8H12.9922V0.74158H0.904392V8Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1955_1555)">
+              <path
+                opacity="0.5"
+                d="M6.97405 7.9994C7.18074 7.99403 7.37815 7.90552 7.52767 7.75118L12.7375 2.30606C12.897 2.1376 12.9885 1.90792 12.9921 1.66695C12.9957 1.42598 12.9112 1.19321 12.7568 1.01924C12.6811 0.933736 12.5905 0.865243 12.4902 0.817697C12.3899 0.770151 12.2818 0.744488 12.1723 0.742182C12.0628 0.739875 11.954 0.760971 11.852 0.804258C11.7501 0.847544 11.6571 0.912169 11.5783 0.994421L6.94866 5.83598L2.31783 0.994421C2.23875 0.911824 2.1453 0.846997 2.04289 0.803694C1.94047 0.760391 1.83113 0.73947 1.72118 0.742143C1.61124 0.744815 1.50288 0.771029 1.40237 0.819266C1.30186 0.867503 1.2112 0.936805 1.13564 1.02316C0.982902 1.19746 0.899701 1.42968 0.903997 1.66969C0.908295 1.90971 0.999744 2.13828 1.15861 2.30606L6.36845 7.75118C6.44871 7.83413 6.54356 7.89883 6.64737 7.94147C6.75119 7.9841 6.86307 8.0038 6.97405 7.9994Z"
+                fill="#242424"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="headerMobile__item-menu">
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">Интеграция с Битрикс24</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Авито</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal"
+              >с мессенджерами и соцсетями</a
+            >
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с телефонией</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с почтой</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Яндексом</a>
+          </div>
+          <div class="menuModalChildren__link">Интеграция с RetailCRM</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Битрикс</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Yakassa</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтами</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с складом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с чатом</a>
+          </div>
+        </div>
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">Интеграция с amoCRM</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с телефонией</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Power BI</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с почтой</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Битрикс</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Google</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с эквайрингом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Яндексом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Asterisk</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Авито</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с hh</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с МойСклад</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Jivosite</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Trello</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с мессенджерами</a>
+          </div>
+        </div>
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">Интеграция с Roistat</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Bitrix24</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Wazzup</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с сайтом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с hh</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с 1С</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Директом</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Метрикой</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Mango</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Elama</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с promo</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">с Avito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">
+        Настройка CRM
+        <svg
+          width="13"
+          height="8"
+          viewBox="0 0 13 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <mask
+              id="mask0_1955_1555"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="13"
+              height="8"
+            >
+              <path d="M0.904392 8H12.9922V0.74158H0.904392V8Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1955_1555)">
+              <path
+                opacity="0.5"
+                d="M6.97405 7.9994C7.18074 7.99403 7.37815 7.90552 7.52767 7.75118L12.7375 2.30606C12.897 2.1376 12.9885 1.90792 12.9921 1.66695C12.9957 1.42598 12.9112 1.19321 12.7568 1.01924C12.6811 0.933736 12.5905 0.865243 12.4902 0.817697C12.3899 0.770151 12.2818 0.744488 12.1723 0.742182C12.0628 0.739875 11.954 0.760971 11.852 0.804258C11.7501 0.847544 11.6571 0.912169 11.5783 0.994421L6.94866 5.83598L2.31783 0.994421C2.23875 0.911824 2.1453 0.846997 2.04289 0.803694C1.94047 0.760391 1.83113 0.73947 1.72118 0.742143C1.61124 0.744815 1.50288 0.771029 1.40237 0.819266C1.30186 0.867503 1.2112 0.936805 1.13564 1.02316C0.982902 1.19746 0.899701 1.42968 0.903997 1.66969C0.908295 1.90971 0.999744 2.13828 1.15861 2.30606L6.36845 7.75118C6.44871 7.83413 6.54356 7.89883 6.64737 7.94147C6.75119 7.9841 6.86307 8.0038 6.97405 7.9994Z"
+                fill="#242424"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="headerMobile__item-menu">
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">amoCRM</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Эквайринг</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Воронка</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Телефония</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Автоматизация</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Форма</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Чат боты</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Задачи</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Заявки</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Касса</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Мобильная версия</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Десктоп</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Sensei</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Бизнес процессы</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Отдел продаж</a>
+          </div>
+        </div>
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">Битрикс24</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Права</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Лиды</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Бизнес Процессы</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Воронка</a>
+          </div>
+          <div class="menuModalChildren__link">Roistat</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Подключить Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Источники Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Цели Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Заявки Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика Roistat</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Речевая аналитика</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Сквозная аналитика</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Коллтрекинг</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Счётчик</a>
+          </div>
+        </div>
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">RetailCRM</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Клиенты</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Модули</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Заказы</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Ещё</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">
+        Про CRM
+        <svg
+          width="13"
+          height="8"
+          viewBox="0 0 13 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <mask
+              id="mask0_1955_1555"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="13"
+              height="8"
+            >
+              <path d="M0.904392 8H12.9922V0.74158H0.904392V8Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1955_1555)">
+              <path
+                opacity="0.5"
+                d="M6.97405 7.9994C7.18074 7.99403 7.37815 7.90552 7.52767 7.75118L12.7375 2.30606C12.897 2.1376 12.9885 1.90792 12.9921 1.66695C12.9957 1.42598 12.9112 1.19321 12.7568 1.01924C12.6811 0.933736 12.5905 0.865243 12.4902 0.817697C12.3899 0.770151 12.2818 0.744488 12.1723 0.742182C12.0628 0.739875 11.954 0.760971 11.852 0.804258C11.7501 0.847544 11.6571 0.912169 11.5783 0.994421L6.94866 5.83598L2.31783 0.994421C2.23875 0.911824 2.1453 0.846997 2.04289 0.803694C1.94047 0.760391 1.83113 0.73947 1.72118 0.742143C1.61124 0.744815 1.50288 0.771029 1.40237 0.819266C1.30186 0.867503 1.2112 0.936805 1.13564 1.02316C0.982902 1.19746 0.899701 1.42968 0.903997 1.66969C0.908295 1.90971 0.999744 2.13828 1.15861 2.30606L6.36845 7.75118C6.44871 7.83413 6.54356 7.89883 6.64737 7.94147C6.75119 7.9841 6.86307 8.0038 6.97405 7.9994Z"
+                fill="#242424"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="headerMobile__item-menu">
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">Битрикс24</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Телефония</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Магазин</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Маркет</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Приложения</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Касса</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Воронки</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Оплата</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Как подключить</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Портал</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Аналитика</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Автоматизация</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Синхронизация</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Экстранет</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Эквайринг</a>
+          </div>
+        </div>
+        <div class="menuModalChildren__column">
+          <div class="menuModalChildren__link">amoCRM</div>
+          <div class="menuModalChildren__submenu">
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Обучение</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Поддержка</a>
+            <a href="#" class="menuModalChildren__submenuLink close-modal">Разработка Виджетов</a>
+          </div>
+          <div class="menuModalChildren__link">RetailCRM</div>
+          <div class="menuModalChildren__link">Roistat</div>
+        </div>
+      </div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">
+        Кейсы
+        <svg
+          width="13"
+          height="8"
+          viewBox="0 0 13 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <mask
+              id="mask0_1955_1555"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="13"
+              height="8"
+            >
+              <path d="M0.904392 8H12.9922V0.74158H0.904392V8Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1955_1555)">
+              <path
+                opacity="0.5"
+                d="M6.97405 7.9994C7.18074 7.99403 7.37815 7.90552 7.52767 7.75118L12.7375 2.30606C12.897 2.1376 12.9885 1.90792 12.9921 1.66695C12.9957 1.42598 12.9112 1.19321 12.7568 1.01924C12.6811 0.933736 12.5905 0.865243 12.4902 0.817697C12.3899 0.770151 12.2818 0.744488 12.1723 0.742182C12.0628 0.739875 11.954 0.760971 11.852 0.804258C11.7501 0.847544 11.6571 0.912169 11.5783 0.994421L6.94866 5.83598L2.31783 0.994421C2.23875 0.911824 2.1453 0.846997 2.04289 0.803694C1.94047 0.760391 1.83113 0.73947 1.72118 0.742143C1.61124 0.744815 1.50288 0.771029 1.40237 0.819266C1.30186 0.867503 1.2112 0.936805 1.13564 1.02316C0.982902 1.19746 0.899701 1.42968 0.903997 1.66969C0.908295 1.90971 0.999744 2.13828 1.15861 2.30606L6.36845 7.75118C6.44871 7.83413 6.54356 7.89883 6.64737 7.94147C6.75119 7.9841 6.86307 8.0038 6.97405 7.9994Z"
+                fill="#242424"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="headerMobile__item-menu">
+        <a href="#" class="menuModalChildren__link close-modal">Отзывы</a>
+        <a href="#" class="menuModalChildren__link close-modal">Решения</a>
+      </div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">О нас</div>
+    </div>
+    <div class="headerMobile__item">
+      <div class="headerMobile__item-head">Контакты</div>
+    </div>
+  </div>
+  <div class="headerMobile__contacts">
+    <div class="headerMobile__contacts-phone">
+      <img src="public/images/icons/contacts-phone.jpg" alt="" />
+      +7 (861) 217-64-91
+    </div>
+    <div class="headerMobile__contacts-social">
+      <a href="#" class="headerMobile__contacts-socialLink">
+        <img src="public/images/icons/contacts-tg.jpg" alt="" />
+      </a>
+      <a href="#" class="headerMobile__contacts-socialLink">
+        <img src="public/images/icons/contacts-w.jpg" alt="" />
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+      <div class="top top--rates top--case top--content">
+  <div class="top__inner container">
+    <div class="top__info">
+      <div class="top__info-image">
+        <img src="public/images/global/TopImage-stores.jpg" alt="" />
+        <div class="top__info-imageBg"></div>
+      </div>
+    </div>
+    <div class="top__content">
+      <h1 class="top__title title"><span>CRM</span> для <br>интернет-магазина</h1>
+      <p class="top__content-text">Интеграция интернет-магазина с CRM позволяет вести единую клиентскую базу, делать процесс лидогенерации более эффективным. Специальные CRM-системы для интернет-магазинов, например, RetailCRM, позволяют ускорить процесс обработки заказа в несколько раз, не упустить важных деталей при работе менеджера с клиентом, повысить уровень сервиса и обслуживания, а также экономить бюджет за счёт  анализа источников трафика.</p>
+      <div class="top__info-benefits">
+        <div class="top__info-benefitsItem">
+          <img src="public/images/icons/top-benefits-2.jpg" alt="" />
+          Застройщикам
+        </div>
+        <div class="top__info-benefitsItem">
+          <img src="public/images/icons/top-benefits-3.jpg" alt="" />
+          Интернет-<br />магазинам
+        </div>
+        <div class="top__info-benefitsItem">
+          <img src="public/images/icons/top-benefits-4.jpg" alt="" />
+          Отчёты <br />и аналитика
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="storesProblems">
+  <div class="storesProblems__inner container">
+    <div class="sectionHead">
+  <div class="sectionHead__decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sectionHead__text">
+    проблемы интернет-магазинов и их решение
+  </div>
+</div>
+    <div class="storesProblems__item">
+      <div class="storesProblems__item-icon">
+        <img src="public/images/global/stores/item-1.jpg" alt="">
+      </div>
+      <div class="storesProblems__item-content">
+        <div class="storesProblems__item-head">
+          <div class="storesProblems__item-problem">Лиды поступают по разным каналам и часто теряются из-за плохого контроля</div>
+          <div class="storesProblems__item-solution">Все лиды попадают в CRM и обрабатываются вовремя</div>
+        </div>
+        <button data-micromodal-trigger="form-modal" class="defaultButton normal accent-light hover--accent false" style="max-width: 100%;">
+  БОЛЕЕ 50 ВОЗМОЖНЫХ ИНТЕГРАЦИЙ
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+      </div>
+    </div>
+    <div class="storesProblems__item">
+      <div class="storesProblems__item-icon">
+        <img src="public/images/global/stores/item-2.jpg" alt="">
+      </div>
+      <div class="storesProblems__item-content">
+        <div class="storesProblems__item-head">
+          <div class="storesProblems__item-problem">Много каналов рекламы и сложно анализировать продажи </div>
+          <div class="storesProblems__item-solution">CRM покажет в отчётах какие источники трафика эффективны, а на какие пора перестать тратиться</div>
+        </div>
+        <button data-micromodal-trigger="form-modal" class="defaultButton normal accent-light hover--accent false" style="max-width: 100%;">
+  АНАЛИТИКА И ОТЧЕТНОСТЬ
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+      </div>
+    </div>
+    <div class="storesProblems__item">
+      <div class="storesProblems__item-icon">
+        <img src="public/images/global/stores/item-3.jpg" alt="">
+      </div>
+      <div class="storesProblems__item-content">
+        <div class="storesProblems__item-head">
+          <div class="storesProblems__item-problem">Нет регламента для работы с клиентами из-за чего качество общения с клиентами и эффективность продаж занижены</div>
+          <div class="storesProblems__item-solution">Менеджеры работают по четко прописанным скриптам </div>
+        </div>
+        <button data-micromodal-trigger="form-modal" class="defaultButton normal accent-light hover--accent false" style="max-width: 100%;">
+  ВОРОНКА ПРОДАЖ В CRM
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+      </div>
+    </div>
+    <div class="storesProblems__item">
+      <div class="storesProblems__item-icon">
+        <img src="public/images/global/stores/item-4.jpg" alt="">
+      </div>
+      <div class="storesProblems__item-content">
+        <div class="storesProblems__item-head">
+          <div class="storesProblems__item-problem">Большинство работы выполняется вручную, что влечет за собой ошибки и забывчивость</div>
+          <div class="storesProblems__item-solution">Документация сформируется автоматически, а система напомнит менеджерам о важных задачах</div>
+        </div>
+        <button data-micromodal-trigger="form-modal" class="defaultButton normal accent-light hover--accent false" style="max-width: 100%;">
+  БОЛЕЕ 50 ВОЗМОЖНЫХ ИНТЕГРАЦИЙ
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="quiz">
+  <div class="quiz__inner container">
+    <div class="quiz__content">
+      Тест на идеальную <br>CRM-систему <br>для Вашей клиники 
+    </div>
+    <div class="quiz__box">
+      <div class="quiz__item active" data-quiz-item="1" style="display: block;">
+        <div class="quiz__item-title">
+          1. Для чего внедряете CRM?
+        </div>
+        <div class="quiz__item-form">
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу оптимизировать воронку продаж
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу получать все лиды в одном окне
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу структурировать и хранить клиентскую базу
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу наладить аналитику в продажах и маркетинге
+          </label>
+        </div>
+        <button class="quiz__item-button defaultButton normal white hover--whiteBorderShadow" style="max-width: 100%;">
+          дальше
+            <div class="defaultButton__arrow">
+              <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+              </svg>
+            </div>
+        </button>
+      </div>
+      <div class="quiz__item" data-quiz-item="2">
+        <div class="quiz__item-title">
+          2. Для чего внедряете CRM?
+        </div>
+        <div class="quiz__item-form">
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу оптимизировать воронку продаж
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу получать все лиды в одном окне
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу структурировать и хранить клиентскую базу
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу наладить аналитику в продажах и маркетинге
+          </label>
+        </div>
+        <button class="quiz__item-button defaultButton normal white hover--whiteBorderShadow" style="max-width: 100%;">
+          дальше
+            <div class="defaultButton__arrow">
+              <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+              </svg>
+            </div>
+        </button>
+      </div>
+      <div class="quiz__item" data-quiz-item="3">
+        <div class="quiz__item-title">
+          3. Для чего внедряете CRM?
+        </div>
+        <div class="quiz__item-form">
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу оптимизировать воронку продаж
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу получать все лиды в одном окне
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу структурировать и хранить клиентскую базу
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу наладить аналитику в продажах и маркетинге
+          </label>
+        </div>
+        <button class="quiz__item-button defaultButton normal white hover--whiteBorderShadow" style="max-width: 100%;">
+          дальше
+            <div class="defaultButton__arrow">
+              <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+              </svg>
+            </div>
+        </button>
+      </div>
+      <div class="quiz__item" data-quiz-item="4">
+        <div class="quiz__item-title">
+          4. Для чего внедряете CRM?
+        </div>
+        <div class="quiz__item-form">
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу оптимизировать воронку продаж
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу получать все лиды в одном окне
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу структурировать и хранить клиентскую базу
+          </label>
+          <label class="quiz-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Хочу наладить аналитику в продажах и маркетинге
+          </label>
+        </div>
+        <button class="quiz__item-button defaultButton normal white hover--whiteBorderShadow" style="max-width: 100%;">
+          узнать стоимость
+            <div class="defaultButton__arrow">
+              <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+              </svg>
+            </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="storesFunctions">
+  <div class="storesFunctions__inner container">
+    <div class="sectionHead">
+  <div class="sectionHead__decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sectionHead__text">
+    ТОП-5 функций CRM для  интернет-магазина
+  </div>
+</div>
+    <h2 class="storesFunctions__title title-2">
+      Характеристики товара “CRM для интернет-магазина” 
+    </h2>
+    <div class="storesFunctions__table">
+      <div class="storesFunctions__table-item">
+        <div class="storesFunctions__table-name">
+          Память 
+        </div>
+        <div class="storesFunctions__table-content">
+          Удобно хранить информацию о клиентах и их истории покупок, а также об остатках на складе
+        </div>
+      </div>
+      <div class="storesFunctions__table-item">
+        <div class="storesFunctions__table-name">
+          Точность
+        </div>
+        <div class="storesFunctions__table-content">
+          Интеграция с сайтом интернет-магазина — для получения заказов прямо в CRM-систему
+        </div>
+      </div>
+      <div class="storesFunctions__table-item">
+        <div class="storesFunctions__table-name">
+          Удобство
+        </div>
+        <div class="storesFunctions__table-content">
+          Система автоматических напоминаний, чтобы менеджеры не забывали перезвонить клиенту или отправить доставку
+        </div>
+      </div>
+      <div class="storesFunctions__table-item">
+        <div class="storesFunctions__table-name">
+          Совместимость
+        </div>
+        <div class="storesFunctions__table-content">
+          Интеграция с Яндекс.Метрикой, Google Analytics и пр. для развернутой аналитики по трафику интернет-магазина
+        </div>
+      </div>
+      <div class="storesFunctions__table-item">
+        <div class="storesFunctions__table-name">
+          Авто-рассылки
+        </div>
+        <div class="storesFunctions__table-content">
+          Автоматические email и sms рассылки для клиентов интернет-магазина, со статусами заказов и временем доставки
+        </div>
+      </div>
+    </div>
+    <button data-micromodal-trigger="form-modal" class="defaultButton large accent-light hover--accent false" style="max-width: 700px;">
+  В корзину!
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+  </div>
+</div>
+      <div class="contentList">
+  <div class="contentList__inner container">
+    <div class="sectionHead">
+  <div class="sectionHead__decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sectionHead__text">
+    где клиника теряет клиентов?
+  </div>
+</div>
+
+    
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            1
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          <b>Полноценная клиентская база.</b> Ни одна заявка не остаётся незамеченной при наличии CRM-системы. Данные о новых клиентах автоматически сохраняются. А при повторном обращении программа идентифицирует покупателя и открывает историю взаимодействия с ним
+        </div>
+      </div>
+    
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            2
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          <b>Возможность сегментации клиентов.</b> Разработка персональных предложений с учетом особенностей потребителей повышает продажи. Например, отправка писем с купонами на скидку для именинников текущего месяца. В CRM-системе можно легко выделить группы клиентов по заданным признакам: возрасту, количеству покупок, потребительским предпочтениям
+        </div>
+      </div>
+    
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            3
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          <b>Централизованный прием заявок.</b> Ваш интернет-магазин принимает заказы не только через сайт, но и по телефону, и в мессенджерах? CRM-система учтет каждый из них, поможет избежать ошибок и дублирование данных. Например, если человек одновременно оставил заявку в электронной почте и на сайте
+        </div>
+      </div>
+    
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            4
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          <b>Наглядная аналитика.</b> Отслеживайте работу сайта, менеджеров по заданным показателям и оперативно устраняйте ошибки. CRM позволит оценить объемы продаж, процент потерянных клиентов на каждом этапе сделки
+        </div>
+      </div>
+    
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            5
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          <b>Эффективное планирование и контроль работы магазина.</b> Ставьте цели и равномерно распределяйте нагрузку на сотрудников. Встроенный планер напомнит о сроках выполнения задач. Например, сообщит о предстоящем звонке клиенту
+        </div>
+      </div>
+    
+    
+  </div>
+</div>
+
+      <div class="form">
+  <div class="form__inner container">
+    <div class="form__title">
+      Сформируем предложение <br>
+      под ваш бизнес <br>
+      БЕСПЛАТНО 
+    </div>
+    <div class="form__subtitle">
+      после консультации
+    </div>
+    <form class="form__box">
+      <div class="form__inputWrapper">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="text" class="form__input phone-input" placeholder="Номер телефона">
+      </div>
+
+      <button data-micromodal-trigger="form-modal" class="defaultButton normal accent hover--whiteBorderShadow false" style="max-width: 422px;">
+  позвоните мне
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+    </form>
+  </div>
+</div>
+      <div class="gallery">
+  <div class="gallery__inner container">
+    <div class="sectionHead">
+  <div class="sectionHead__decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sectionHead__text">
+    реализованные проекты
+  </div>
+</div>
+    <div class="gallery__box">
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-1.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">ЖК «Каширка.LIKE»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-2.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">ЖК «Микрорайон Хороший»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-3.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">Застройщик «Севастопольстрой»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-4.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">Изготовление кухонной мебели</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-5.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">Английский застройщик «Red Builders»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-6.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">Дилерский центр «Hyundai»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-7.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">«Русметмаш»</div>
+</div>
+      <div class="solutionItem">
+  <div class="solutionItem__image">
+    <img src="public/images/content/gallery-8.jpg" alt="">
+  </div>
+  <div class="solutionItem__name">«Хлеб и мясо»</div>
+</div>
+    </div>
+    <button data-micromodal-trigger="form-modal" class="defaultButton normal white-border hover--accentLightShadow with-arrow" style="max-width: 422px;">
+  посмотреть ещё
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>  
+  </div>
+</div>
+      <div class="reviews">
+  <div class="reviews__inner container">
+    <div class="sectionHead">
+  <div class="sectionHead__decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sectionHead__text">
+    они нам доверяют настолько, что показывают свои лица
+  </div>
+</div>
+    <div class="reviews__box swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews__item ">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-1.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Мария Таманская, 
+              </div>
+              <div class="reviews__item-role">
+                зам. ген.директора “Невидимка”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Мы достигли поставленных целей и результат нас обрадовал!
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews__item">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-2.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Дмитрий Трунов, 
+              </div>
+              <div class="reviews__item-role">
+                зам. руководителя “Аудио Продакшен”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Были решены сложные индивидуальные задачи для нашего бизнеса. Ребята с успехом справились!
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews__item">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-3.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Шпагов Степан, 
+              </div>
+              <div class="reviews__item-role">
+                фин.директор “MOZI”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Оцениваю работу на 5... Даже 5 с плюсом!
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews__item">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-1.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Мария Таманская, 
+              </div>
+              <div class="reviews__item-role">
+                зам. ген.директора “Невидимка”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Мы достигли поставленных целей и результат нас обрадовал!
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews__item">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-2.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Дмитрий Трунов, 
+              </div>
+              <div class="reviews__item-role">
+                зам. руководителя “Аудио Продакшен”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Были решены сложные индивидуальные задачи для нашего бизнеса. Ребята с успехом справились!
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews__item">
+            <div class="reviews__item-head">
+              <div class="reviews__item-image">
+                <img src="public/images/content/reviews/item-3.jpg" alt="">
+              </div>
+              <div class="reviews__item-name">
+                Шпагов Степан, 
+              </div>
+              <div class="reviews__item-role">
+                фин.директор “MOZI”
+              </div>
+            </div>
+            <div class="reviews__item-content">
+              Оцениваю работу на 5... Даже 5 с плюсом!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews__controls">
+      <div class="reviews__controls-arrow reviews__controls-arrow--prev">
+        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.19109 8.19188C0.744772 8.63819 0.744772 9.36181 1.19109 9.80812L8.46418 17.0812C8.9105 17.5275 9.63411 17.5275 10.0804 17.0812C10.5267 16.6349 10.5267 15.9113 10.0804 15.465L3.61545 9L10.0804 2.53502C10.5267 2.08871 10.5267 1.36509 10.0804 0.918779C9.63411 0.472466 8.9105 0.472466 8.46418 0.918779L1.19109 8.19188ZM3.14062 7.85714H1.99921L1.99921 10.1429H3.14062V7.85714Z" fill="#9B2D30"/>
+        </svg>  
+      </div>
+      <div class="reviews__controls-pagination"></div>
+      <div class="reviews__controls-arrow reviews__controls-arrow--next">
+        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.0882 9.80812C10.5345 9.36181 10.5345 8.63819 10.0882 8.19188L2.81511 0.918779C2.3688 0.472466 1.64518 0.472466 1.19887 0.918779C0.752555 1.36509 0.752555 2.08871 1.19887 2.53502L7.66385 9L1.19887 15.465C0.752555 15.9113 0.752555 16.6349 1.19887 17.0812C1.64518 17.5275 2.3688 17.5275 2.81511 17.0812L10.0882 9.80812ZM8.13867 10.1429H9.28009V7.85714H8.13867V10.1429Z" fill="#9B2D30"/>
+        </svg>  
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Footer section -->
+      <footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__box">
+      <a href="#" class="footer__logo">
+        <img src="public/images/icons/footer-logo.svg" alt="">
+      </a>
+      <div class="footer__column">
+        <div class="footer__column-title">amoCRM</div>
+        <a href="#" class="footer__column-link">Внедрение</a>
+        <a href="#" class="footer__column-link">Лицензии</a>
+        <a href="#" class="footer__column-link">Интеграции</a>
+        <a href="#" class="footer__column-link">Настроить</a>
+        <a href="#" class="footer__column-link">Про amoCRM</a>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">Битрикс24</div>
+        <a href="#" class="footer__column-link">Внедрение</a>
+        <a href="#" class="footer__column-link">Лицензии</a>
+        <a href="#" class="footer__column-link">Интеграции</a>
+        <a href="#" class="footer__column-link">Настроить</a>
+        <a href="#" class="footer__column-link">Про Битрикс24</a>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">RetailCRM</div>
+        <a href="#" class="footer__column-link">Внедрение</a>
+        <a href="#" class="footer__column-link">Лицензии</a>
+        <a href="#" class="footer__column-link">Интеграции</a>
+        <a href="#" class="footer__column-link">Настроить</a>
+        <a href="#" class="footer__column-link">Про RetailCRM</a>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">Roistat</div>
+        <a href="#" class="footer__column-link">Внедрение</a>
+        <a href="#" class="footer__column-link">Лицензии</a>
+        <a href="#" class="footer__column-link">Интеграции</a>
+        <a href="#" class="footer__column-link">Настроить</a>
+        <a href="#" class="footer__column-link">Про Roistat</a>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__contacts-media">
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/telegram-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/whatsapp-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/vk-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/facebook-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/instagram-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/youtube-icon.png" alt="">
+          </a>
+          <a href="#" class="footer__contacts-mediaLink">
+            <img src="public/images/icons/email-icon.png" alt="">
+          </a>
+        </div>
+        <a href="#" class="footer__contacts-phone">
+          <img src="public/images/icons/phone-icon.png" alt="">
+          +7 (861) 217-64-91
+        </a>
+        <a href="#" class="footer__contacts-button">
+          <img src="public/images/icons/footer-button-icon.jpg" alt="">
+          Партнерская программа
+        </a>
+      </div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__info-copy">
+        © 2024 
+      </div>
+      <a href="#" class="footer__info-policy">
+        Политика конфиденциальности
+      </a>
+      <div class="footer__info-links">
+        <a href="#" class="footer__info-linksItem">Техподдержка</a>
+        <a href="#" class="footer__info-linksItem">Отзывы о нашей работе</a>
+        <a href="#" class="footer__info-linksItem">Примеры решённых задач</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <div class="modal micromodal-slide" id="form-modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <div class="formModal">
+        <div class="formModal__image">
+          <img src="public/images/global/modal-bg.jpg" alt="">
+        </div>
+        <div class="formModal__content">
+          <div class="formModal__title">
+            Оставить заявку
+          </div>
+          <div class="formModal__text">
+            Мы свяжемся с вами в ближайшее время
+          </div>
+          <form class="formModal__form">
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="Имя">
+            </div>
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="Телефон">
+            </div>
+            <div class="formModal__inputWrapper">
+              <input type="text" class="formModal__input" placeholder="E-mail">
+            </div>
+            <button data-micromodal-trigger="form-modal" class="defaultButton normal accent hover--accentLight false" style="max-width: 100%;">
+  Отправить
+    <div class="defaultButton__arrow">
+      <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.2106 10.3545C25.6825 9.88257 25.6825 9.11743 25.2106 8.64551L17.5202 0.955119C17.0482 0.483198 16.2831 0.483198 15.8112 0.955119C15.3393 1.42704 15.3393 2.19217 15.8112 2.6641L22.6471 9.5L15.8112 16.3359C15.3393 16.8078 15.3393 17.573 15.8112 18.0449C16.2831 18.5168 17.0482 18.5168 17.5202 18.0449L25.2106 10.3545ZM0.1875 10.7084H24.3561V8.29157H0.1875V10.7084Z" fill="white"/>
+      </svg>
+    </div>
+</button>
+          </form>
+          <div class="formModal__policy">
+            Нажимая на кнопку вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

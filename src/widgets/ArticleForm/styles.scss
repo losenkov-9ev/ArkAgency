@@ -1,0 +1,38 @@
+.articleForm {
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 52px;
+  }
+  &__box {
+    max-width: 615px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 113.7%;
+    text-align: right;
+  }
+  &__inputWrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 26px;
+  }
+  &__input {
+    max-width: 100%;
+    width: 100%;
+
+    border: 1px solid $light-text;
+    font-size: 18px;
+    padding: 16px 40px;
+    border-radius: $default-borderRadius;
+
+    &::placeholder {
+      color: $light-text;
+    }
+  }
+}

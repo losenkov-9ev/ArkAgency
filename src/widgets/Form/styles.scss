@@ -44,11 +44,128 @@
     border: none;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 48px;
+    border-radius: $default-borderRadius;
     padding: 23px;
 
     &::placeholder {
-      color: #909090;
+      color: $light-text;
     }
+  }
+}
+
+.formExpanded {
+  padding: 102px 0;
+  background-color: $secondary;
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+  &__content {
+    font-size: 54px;
+    line-height: 114%;
+    text-align: right;
+    max-width: 430px;
+    margin-left: auto;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__box-content {
+    max-width: 462px;
+  }
+
+  &__box {
+    padding: 64px 60px;
+    background-image: url('../@img/global/formExpanded-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: $default-borderRadius;
+
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 19px;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__input {
+    max-width: 355px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: $default-borderRadius;
+    padding: 9px 40px;
+
+    font-size: 18px;
+    line-height: 22px;
+
+    &::placeholder {
+      color: $light-text;
+      max-width: 220px;
+    }
+  }
+  &__inputWrapper {
+    margin-bottom: 24px;
+  }
+
+  &__textarea {
+    overflow: auto;
+    resize: none;
+    height: 108px;
+    border-radius: 24px;
+    padding: 20px 40px;
+    max-width: 100%;
+  }
+
+  .formExpanded__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 36px;
+  }
+
+  .formExpanded__checkbox-input {
+    display: none; /* Скрываем стандартный чекбокс */
+  }
+
+  .formExpanded__checkbox-custom {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px; /* Отступ для текста */
+    flex: none;
+  }
+
+  .formExpanded__checkbox-input:checked + .formExpanded__checkbox-custom::before {
+    content: '';
+    width: 12px; /* Внутренний кружок меньше, чтобы был виден внешний */
+    height: 12px;
+    background-color: $text;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .formExpanded__checkbox-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .formExpanded__checkbox-link {
+    color: $secondary;
+    text-decoration: underline;
   }
 }

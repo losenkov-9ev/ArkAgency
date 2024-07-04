@@ -1,0 +1,60 @@
+.analyticsProfit {
+  margin-bottom: 120px;
+
+  &__item {
+    padding: 22px 37px;
+    padding-top: 28px;
+
+    background-color: #fff;
+    border: 1px solid $light-text;
+    border-radius: $default-borderRadius;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid $secondary;
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+
+  &__item-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 114%;
+  }
+
+  &__image {
+    grid-row: span 3;
+    position: relative;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: $default-borderRadius;
+    }
+  }
+
+  &__tip {
+    position: absolute;
+    bottom: 26px;
+    left: -38px;
+
+    p {
+      position: absolute;
+      max-width: 417px;
+      left: 32px;
+      bottom: 32px;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 240px);
+    grid-gap: 35px 30px;
+  }
+}

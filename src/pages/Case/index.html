@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "case"})
+  <body class="case-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+      
+      @@include('../../widgets/Top/case.html', {
+        image: "@img/global/TopImage-case.jpg",
+        title: "Внедрение <span>CRM</span><br> для «Хлеб и мясо» "
+      })
+
+      @@include('../../widgets/Case/Text/index.html')
+      @@include('../../widgets/Case/List/index.html')
+      @@include('../../widgets/Case/Result/index.html')
+      
+      @@include('../../widgets/Form/index.html')
+      @@include('../../widgets/Gallery/index.html')
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

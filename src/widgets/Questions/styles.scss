@@ -1,5 +1,6 @@
 .questions {
-  padding: 189px 0;
+  margin-top: 120px;
+  padding: 60px 0;
   background-image: url('../@img/global/Questions-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +17,7 @@
   &__info {
     font-size: 36px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 48px;
     max-width: 708px;
     width: 100%;
     span {
@@ -37,6 +38,42 @@
     &-title {
       font-size: 36px;
       font-weight: 700;
+    }
+  }
+
+  &.extended {
+    .questions__logic-quiz {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+      max-width: 586px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .questions__logic-checkbox + .questions__logic-checkbox {
+      margin: 0;
+    }
+    .questions__info span {
+      color: $secondary;
+    }
+    .checkmark {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    &__inner {
+      flex-direction: column;
+    }
+    &__info {
+      max-width: 100%;
+      width: 100%;
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -62,6 +99,7 @@
   border-radius: 50%;
   margin-right: 10px; /* Отступ между чекбоксом и текстом */
   position: relative;
+  flex: none;
 }
 
 .questions__logic-checkbox input:checked ~ .checkmark {

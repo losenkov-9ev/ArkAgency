@@ -1,0 +1,12 @@
+.caseText {
+  margin-bottom: 120px;
+  &__content {
+    display: flex;
+    gap: 60px;
+  }
+  &__image {
+    width: 123px;
+    height: 123px;
+    flex: none;
+  }
+}

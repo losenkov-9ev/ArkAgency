@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "about"})
+  <body class="about-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+
+      
+      @@include('../../widgets/AboutPage/Top/index.html')
+      @@include('../../widgets/AboutPage/Principles/index.html')
+      @@include('../../widgets/AboutPage/Competencies/index.html')
+      @@include('../../widgets/AboutPage/History/index.html')
+      @@include('../../widgets/AboutPage/Clients/index.html')
+
+      @@include('../../widgets/Form/index.html')
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

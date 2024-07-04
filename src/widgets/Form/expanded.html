@@ -1,0 +1,46 @@
+<div class="formExpanded">
+  <div class="formExpanded__inner container">
+    <div class="formExpanded__content">
+      Уже пора <br />
+      реализовать <br />
+      проект?
+    </div>
+    <form class="formExpanded__box">
+      <div class="formExpanded__box-content">
+        <div class="formExpanded__title">Расскажите о Вашем проекте</div>
+        <div class="formExpanded__inputWrapper">
+          <input type="text" class="formExpanded__input" placeholder="Ваше имя" />
+        </div>
+        <div class="formExpanded__inputWrapper">
+          <input type="text" class="formExpanded__input" placeholder="Телефон" />
+        </div>
+        <div class="formExpanded__inputWrapper">
+          <input type="text" class="formExpanded__input" placeholder="Email" />
+        </div>
+        <div class="formExpanded__inputWrapper">
+          <textarea
+            class="formExpanded__textarea formExpanded__input"
+            placeholder="Тут про ваш проект. Можно со ссылками на ТЗ и презентации"
+          ></textarea>
+        </div>
+        <label class="formExpanded__checkbox-wrapper">
+          <input type="checkbox" class="formExpanded__checkbox-input" checked />
+          <span class="formExpanded__checkbox-custom"></span>
+          <span class="formExpanded__checkbox-text">
+            Я даю Согласие на обработку персональных данных <br />
+            в соответствии с
+            <a href="#" class="formExpanded__checkbox-link">Политикой Конфиденциальности</a>
+          </span>
+        </label>
+        @@include('../../shared/Button/DefaultButton.html', {
+          text: "позвоните мне",
+          arrow: "false",
+          size: "normal",
+          maxWidth: "100%",
+          color: "accent",
+          hoverColor: "hover--whiteBorderShadow",
+        })
+      </div>
+    </form>
+  </div>
+</div>

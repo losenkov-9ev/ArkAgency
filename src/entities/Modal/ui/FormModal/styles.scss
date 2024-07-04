@@ -38,7 +38,7 @@
     }
 
     &__input {
-      border: 1px solid #242424;
+      border: 1px solid $text;
       border-radius: 60px;
 
       max-width: 100%;
@@ -54,7 +54,7 @@
       border-radius: 32px;
 
       &::placeholder {
-        color: #909090;
+        color: $light-text;
       }
     }
 

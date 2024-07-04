@@ -1,0 +1,38 @@
+.licenseAttraction {
+  margin-bottom: 120px;
+  &__head {
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px;
+
+    &-image {
+      width: 284px;
+      flex: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-box {
+      max-width: 1080px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    &-image {
+      width: 212px;
+      flex: none;
+    }
+  }
+}

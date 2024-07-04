@@ -1,0 +1,24 @@
+<div class="articleForm">
+  <div class="articleForm__inner container">
+    <div class="articleForm__title">
+      У вас остались вопросы? <br>
+      У нас есть ответы
+    </div>
+    <form class="articleForm__box">
+      <div class="articleForm__inputWrapper">
+        <input type="text" class="articleForm__input" placeholder="Ваше имя">
+      </div>
+      <div class="articleForm__inputWrapper">
+        <input type="text" class="articleForm__input phone-input" placeholder="Телефон">
+      </div>
+      @@include('../../shared/Button/DefaultButton.html', {
+        text: "позвоните мне",
+        arrow: "false",
+        size: "normal",
+        maxWidth: "100%",
+        color: "accent",
+        hoverColor: "hover--whiteBorderShadow",
+      })
+    </form>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.blogMenu {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  transform: translateX(19px);
+
+  &__item {
+    writing-mode: vertical-rl;
+    padding: 15px;
+    height: 455px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #fff;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    position: relative;
+    transition: all 0.3s;
+
+    padding-right: 34px;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateX(-19px);
+    }
+
+    $total: 4; // Общее количество элементов
+    @for $i from 1 through $total {
+      &:nth-child(#{$i}) {
+        z-index: #{$total - $i + 1};
+      }
+    }
+  }
+
+  &__item + .blogMenu__item {
+    margin-top: -17px;
+  }
+}

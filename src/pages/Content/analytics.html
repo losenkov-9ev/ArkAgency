@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "analytics"})
+  <body class="content-page analytics-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+
+      @@include('../../widgets/Top/content.html', {
+        image: "@img/global/TopImage-analytics.jpg",
+        title: "Аналитика и <br> отчетность в <span>CRM</span>",
+        text: "Для оценки эффективности работы отдела продаж и маркетинга в CRM предусмотрена аналитика. С помощью удобных отчетов можно легко и быстро выявить проблемы и определить точки роста компании. Помимо этого аналитика в CRM помогает прогнозировать доходы, распределять бюджет и ресурсы"
+      })
+      
+      @@include('../../widgets/ContentPage/Analytics/Profit/index.html')
+      @@include('../../widgets/Quiz/index.html', {
+        title: "Тест «Какие отчеты <br> нужны Вашему <br> бизнесу?»"
+      })
+      @@include('../../widgets/ContentPage/Analytics/Functions/index.html')
+      @@include('../../widgets/ContentPage/Analytics/Examples/index.html')
+
+      @@include('../../widgets/Form/index.html')
+      @@include('../../widgets/Gallery/index.html')
+      @@include('../../widgets/VideoReviews/index.html')
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

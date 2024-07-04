@@ -1,0 +1,61 @@
+.medicalClients {
+  margin-bottom: 120px;
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__item + .medicalClients__item {
+    margin-top: 60px;
+  }
+  &__item-text {
+    max-width: 545px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: $default-borderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 70px;
+  }
+  &__item-action {
+    border: 2px solid $light-text;
+  }
+  &__item-fail {
+    color: #fff;
+    background-color: $secondary;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  &__content-list {
+    padding-left: 20px !important;
+    li {
+      padding-left: 15px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 3px;
+        height: 3px;
+        background-color: $text;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__content {
+    margin-top: 60px;
+  }
+  &__content-title {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,12 @@
+.solutionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+
+  img {
+    overflow: hidden;
+    border-radius: $default-borderRadius;
+  }
+}

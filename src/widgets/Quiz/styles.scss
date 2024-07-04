@@ -1,0 +1,88 @@
+.quiz {
+  background-image: url('../@img/global/quiz-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 81px 0;
+  margin-bottom: 120px;
+
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box {
+    max-width: 686px;
+    width: 100%;
+  }
+  &__content {
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+  }
+  &__item-title {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 27px;
+  }
+  &__item-form {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &__item.active {
+    opacity: 1;
+  }
+}
+
+.quiz-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px; /* Размер текста */
+  user-select: none;
+}
+
+.quiz-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px; /* Отступ между чекбоксом и текстом */
+  position: relative;
+  flex: none;
+}
+
+.quiz-checkbox input:checked ~ .checkmark {
+  background-color: $accent;
+}
+
+.quiz-checkbox input:checked ~ .checkmark::after {
+  content: '';
+  position: absolute;
+
+  left: 3px;
+  bottom: 3px;
+
+  width: 25px;
+  height: 25px;
+  background: url('../@img/icons/check-mark.png') no-repeat center center;
+  background-size: contain;
+}
+
+.quiz-checkbox + .quiz-checkbox {
+  margin-top: 24px;
+}

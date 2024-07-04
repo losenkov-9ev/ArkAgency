@@ -1,4 +1,4 @@
-import { stopPageScroll } from '../../static/js/utils.js';
+import { stopPageScroll } from '../../app/scripts/utils.js';
 
 export class MenuModal {
   constructor({ modalSelector, menuSelector, closeModalSelector, openModalSelector }) {
@@ -8,9 +8,14 @@ export class MenuModal {
     this.closeModalSelector = closeModalSelector;
     this.openModalSelector = openModalSelector;
 
-    this.$modalChildrenItems = this.$modal.querySelectorAll('.menuModalChildren');
+    this.$modalChildrenItems = [
+      ...this.$modal.querySelectorAll('.menuModalChildren'),
+      this.$modal.querySelector('.headerMoblie'),
+    ];
 
     this.initListeners();
+
+    this.isModalOpen = false;
   }
 
   initListeners = () => {
@@ -34,13 +39,15 @@ export class MenuModal {
 
     if ($target.classList.contains(this.openModalSelector)) {
       this.toggleModal({
-        isOpen: true,
+        isOpen: !this.isModalOpen,
         $element: $target,
       });
     }
   };
 
   toggleModal = ({ isOpen = true, $element = '' }) => {
+    this.isModalOpen = isOpen;
+
     const onClose = () => {
       this.$modal.style.display = 'none';
       this.moveChildren();
@@ -64,8 +71,15 @@ export class MenuModal {
   };
 
   moveChildren = (isOpen = false, $element) => {
+    const childrenID = $element?.getAttribute('href');
+
+    childrenID !== '#modal-headerMenu'
+      ? this.menuBehavior($element, childrenID, isOpen)
+      : this.headerBehavior(childrenID, isOpen);
+  };
+
+  menuBehavior = ($element, childrenID, isOpen) => {
     if (isOpen) {
-      const childrenID = $element.getAttribute('href');
       const $children = this.$modal.querySelector(childrenID);
 
       const linkPositionX = $element.getBoundingClientRect().top;
@@ -73,14 +87,29 @@ export class MenuModal {
 
       const modalGap = +$children.getAttribute('data-modal-gap') || 0;
 
-      $children.style.opacity = 1;
       $children.style.left = `${linkPositionY - 16 - modalGap}px`;
       $children.style.top = `${linkPositionX - 10}px`;
+
+      $children.style.opacity = 1;
     } else {
       this.$modalChildrenItems.forEach(($item) => {
-        $item.style.top = '-1000px';
-        $item.style.opacity = 0;
+        if ($item) {
+          $item.style.top = '-1000px';
+          $item.style.opacity = 0;
+        }
       });
+    }
+  };
+
+  headerBehavior = (id, isOpen) => {
+    const $children = this.$modal.querySelector(id);
+
+    if (isOpen) {
+      $children.style.opacity = 1;
+      $children.style.right = 0;
+    } else {
+      $children.style.opacity = 0;
+      $children.style.right = '-1000px';
     }
   };
 }

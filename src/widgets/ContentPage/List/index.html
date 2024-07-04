@@ -1,0 +1,21 @@
+<div class="contentList">
+  <div class="contentList__inner container">
+    @@include('../../../shared/SectionHead/index.html', {
+      text: "где клиника теряет клиентов?"
+    })
+
+    @@for (var i = 1; i <= items.length; i++) {
+      <div class="contentList__item">
+        <div class="contentList__item-number">
+          <span>
+            `+i+`
+          </span>
+        </div>
+        <div class="contentList__item-text">
+          `+items[i-1]+`
+        </div>
+      </div>
+    }
+    
+  </div>
+</div>

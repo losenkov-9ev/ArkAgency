@@ -1,0 +1,23 @@
+.aboutTop {
+  margin: 120px 0;
+
+  &__inner {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__image {
+    max-width: 627px;
+    width: 100%;
+    flex: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 704px;
+  }
+}

@@ -1,4 +1,4 @@
-import { stopPageScroll } from '../../static/js/utils.js';
+import { stopPageScroll } from '../../app/scripts/utils.js';
 
 export class Search {
   constructor(options) {

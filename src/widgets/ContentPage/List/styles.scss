@@ -1,0 +1,22 @@
+.contentList {
+  margin-bottom: 120px;
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+  &__item + .contentList__item {
+    margin-top: 30px;
+  }
+  &__item-number {
+    flex: none;
+    width: 60px;
+    display: block;
+
+    span {
+      color: $light-accent;
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 114%;
+    }
+  }
+}

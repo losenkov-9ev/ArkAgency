@@ -37,6 +37,13 @@ body {
     overflow: hidden;
     padding-right: var(--scrollbar-width);
   }
+
+  @media (max-width: 640px) {
+    zoom: 70%;
+  }
+  @media (max-width: 380px) {
+    zoom: 65%;
+  }
 }
 
 section {

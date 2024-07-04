@@ -1,0 +1,36 @@
+@import '../../shared/SolutionItem/styles';
+
+.solutionTabs {
+  margin: 120px 0;
+
+  &__buttons {
+    display: flex;
+    gap: 30px 60px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  &__button {
+    padding: 15px 50px;
+    border: 1px solid $text;
+    border-radius: $default-borderRadius;
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.mixitup-control-active {
+      font-weight: 600;
+      border: 1px solid $accent;
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 50px;
+    margin-bottom: 30px;
+  }
+}

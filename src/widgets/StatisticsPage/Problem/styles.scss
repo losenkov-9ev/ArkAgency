@@ -1,0 +1,15 @@
+.statisticsProblem {
+  margin-bottom: 120px;
+
+  &__content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+  &__content-image {
+    width: 215px;
+    height: 215px;
+    flex: none;
+  }
+}

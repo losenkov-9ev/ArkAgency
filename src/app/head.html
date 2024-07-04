@@ -16,6 +16,31 @@
   <meta name="format-detection" content="address=no" />
   <meta name="format-detection" content="email=no" />
 
+  @@if(title === "contacts") {
+  <script
+    src="https://api-maps.yandex.ru/2.1?apikey=a2292842-148a-4a51-80de-d70d1d1f5377&lang=ru_RU"
+    type="text/javascript"
+  ></script>
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      ymaps.modules.require(['Map', 'Placemark']).spread(
+        function (Map, Placemark) {
+          var myMap = new Map('map', {
+            center: [45.039201, 38.959208],
+            zoom: 14,
+            controls: [],
+          });
+          myMap.geoObjects.add(new Placemark(myMap.getCenter()));
+        },
+        function (error) {
+          // Обработка ошибок.
+        },
+        this,
+      );
+    });
+  </script>
+  }
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +49,5 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
   <link rel="shortcut icon" href="@img/global/favicon.svg" type="image/x-icon" />
 </head>

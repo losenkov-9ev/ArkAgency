@@ -1,0 +1,16 @@
+.analyticsExamples {
+  margin-bottom: 120px;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  &__item-icon {
+    width: 123px;
+    height: 123px;
+    flex: none;
+  }
+  &__item + .analyticsExamples__item {
+    margin-top: 30px;
+  }
+}

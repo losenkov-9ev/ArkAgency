@@ -1,0 +1,53 @@
+.storesFunctions {
+  margin-bottom: 120px;
+  .sectionHead {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__table {
+    padding: 58px 54px;
+    padding-bottom: 36px;
+    background-color: #fff;
+    border-radius: $default-borderRadius;
+    margin-bottom: 60px;
+
+    border: 2px solid $light-text;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  }
+  &__table-name {
+    max-width: 400px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 900;
+    color: $secondary;
+    line-height: 114%;
+    padding-right: 20px;
+    border-right: 1px solid $light-text;
+    padding-bottom: 37px;
+  }
+
+  &__table-item {
+    display: flex;
+  }
+
+  &__table-item + .storesFunctions__table-item {
+    border-top: 1px solid $light-text;
+    .storesFunctions__table-name {
+      padding-top: 36px;
+    }
+    .storesFunctions__table-content {
+      padding-top: 36px;
+    }
+  }
+  &__table-content {
+    padding-left: 60px;
+  }
+
+  .defaultButton {
+    margin: 0 auto;
+  }
+}

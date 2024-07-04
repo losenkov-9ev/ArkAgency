@@ -47,7 +47,7 @@
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-    color: #242424;
+    color: $text;
     display: block;
 
     margin-top: 18px;
@@ -68,7 +68,7 @@
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
-    color: #242424;
+    color: $text;
     transition: all 0.2s;
     &:hover {
       color: $light-accent;
@@ -113,5 +113,9 @@
   }
   &#modal-case {
     max-width: 166px;
+  }
+
+  @media (max-width: $screen-lg) {
+    display: none !important;
   }
 }

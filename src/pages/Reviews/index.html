@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "reviews"})
+  <body class="reviews-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+      
+      @@include('../../widgets/ReviewsContent/index.html')
+      @@include('../../widgets/Form/expanded.html')
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

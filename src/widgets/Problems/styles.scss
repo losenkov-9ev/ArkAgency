@@ -46,7 +46,7 @@
       &::before {
         content: '+';
         font-size: 60px;
-        color: #242424;
+        color: $text;
         position: absolute;
         bottom: -56px;
         right: -27px;
@@ -59,7 +59,7 @@
       background-color: $light-accent;
       color: #fff;
       padding: 13px 26px;
-      border-radius: 48px;
+      border-radius: $default-borderRadius;
     }
   }
   .defaultButton {

@@ -5,7 +5,7 @@
   left: 0;
   bottom: -100px;
   z-index: $z-index-searchBg;
-  background-color: rgba(#242424, 0.3);
+  background-color: rgba($text, 0.3);
   display: none;
   opacity: 0;
   transition: all 0.3s;
@@ -69,7 +69,7 @@
       padding: 5px 30px;
       font-size: 18px;
       font-weight: 500;
-      color: #909090;
+      color: $light-text;
       transition: all 0.3s;
 
       &:hover {
@@ -97,8 +97,11 @@
     border-radius: 32px;
 
     &::placeholder {
-      color: #909090;
+      color: $light-text;
     }
+  }
+  &-input--mobile {
+    display: none;
   }
   &-button {
     padding: 6px 32px;
@@ -116,6 +119,10 @@
 
     &:hover {
       background-color: $accent;
+    }
+
+    svg {
+      display: none;
     }
   }
   &-controls {
@@ -145,6 +152,31 @@
 
     &.active {
       display: block;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &-input {
+      padding: 16px 22px;
+      display: none;
+      padding-right: 60px;
+    }
+    &-controls {
+      right: 3px;
+    }
+    &-input--mobile {
+      display: block;
+    }
+  }
+  @media (max-width: 640px) {
+    &-button {
+      padding: 8px;
+      span {
+        display: none;
+      }
+      svg {
+        display: block;
+      }
     }
   }
 }

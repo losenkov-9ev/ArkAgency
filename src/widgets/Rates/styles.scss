@@ -1,0 +1,99 @@
+.rates {
+  margin-top: 120px;
+
+  &.rates--extended {
+    margin-top: 0;
+    margin-bottom: 120px;
+
+    .sectionHead {
+      margin-bottom: 60px;
+    }
+    .defaultButton {
+      margin-top: auto;
+    }
+    .rates__item {
+      padding: 56px 34px;
+      gap: 30px;
+    }
+    .rates__item-price {
+      color: $accent;
+      margin-bottom: 5px;
+    }
+    .rates__item-time {
+      font-weight: 500;
+    }
+    .rates__item-point {
+      font-weight: 400;
+    }
+    .rates__item-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .rates__item-head {
+      margin-bottom: 0;
+    }
+  }
+
+  .sectionHead {
+    margin-bottom: 15px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: 700;
+  }
+
+  &__box {
+    display: flex;
+    gap: 21px;
+    margin-bottom: 60px;
+  }
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    padding: 66px 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 2px solid $light-text;
+    border-radius: $default-borderRadius;
+
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 25px 0 rgba($text, 0.25);
+    }
+  }
+
+  &__item-name {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  &__item-price {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  &__item-head {
+    padding-bottom: 30px;
+    border-bottom: 2px solid $light-text;
+    margin-bottom: 30px;
+  }
+  &__item-point {
+    font-weight: 500;
+    text-transform: lowercase;
+    font-size: 22px;
+  }
+  &__item-point + .rates__item-point {
+    margin-top: 24px;
+  }
+
+  .defaultButton {
+    margin: 0 auto;
+  }
+}

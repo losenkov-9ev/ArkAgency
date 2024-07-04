@@ -1,5 +1,5 @@
 import MicroModal from 'micromodal';
-import { stopPageScroll } from '../../static/js/utils.js';
+import { stopPageScroll } from '../../app/scripts/utils.js';
 
 export class Modal {
   constructor() {
@@ -11,10 +11,14 @@ export class Modal {
       MicroModal.init({
         awaitCloseAnimation: true,
         onShow: () => stopPageScroll(true),
-        onClose: () => stopPageScroll(false),
+        onClose: () => setTimeout(() => stopPageScroll(false), 200),
       });
     } catch (e) {
       console.log('micromodal error: ', e);
     }
+  }
+
+  toggleModal(id, isOpen) {
+    isOpen ? MicroModal.show(id) : MicroModal.close(id);
   }
 }

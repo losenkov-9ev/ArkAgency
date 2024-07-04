@@ -18,17 +18,4 @@
 @import '../entities/Modal/styles';
 @import '../entities/MenuModal/styles';
 
-// widgets
-@import '../widgets/Top/styles';
-@import '../widgets/Profit/styles';
-@import '../widgets/Questions/styles';
-@import '../widgets/Gallery/styles';
-@import '../widgets/VideoReviews/styles';
-@import '../widgets/Form/styles';
-@import '../widgets/About/styles';
-@import '../widgets/FAQ/styles';
-@import '../widgets/MenuModalChildren/styles';
-@import '../widgets/InformationSheet/styles';
-
-@import '../widgets/Problems/styles';
-@import '../widgets/Solution/styles';
+@import '../../widgets/MenuModalChildren/styles';

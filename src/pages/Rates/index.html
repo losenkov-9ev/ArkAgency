@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "rates"})
+  <body class="rates-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+      
+      @@include('../../widgets/Top/rates.html', {
+        image: "@img/global/TopImage-rates.jpg",
+        title: "Стоимость лицензии <br><span>amoCRM</span>"
+      })
+      
+      @@include('../../widgets/Rates/extended.html')
+      @@include('../../widgets/Reviews/index.html')
+      @@include('../../widgets/Quiz/index.html', {
+        title: "Тест на ваш <br> идеальный тариф"
+      })
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

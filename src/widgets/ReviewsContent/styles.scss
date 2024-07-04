@@ -1,0 +1,10 @@
+@import '../../shared/Video/styles';
+
+.reviewsContent {
+  margin: 120px 0;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 44px 59px;
+  }
+}

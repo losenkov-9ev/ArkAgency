@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "integration"})
+  <body class="integration-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+
+      @@include('../../widgets/Top/index.html', {
+        image: "@img/global/TopImage.jpg",
+        title: "<span>Внедрение и интеграция</span> Битрикс24 и amoCRM"
+      })
+      
+      @@include('../../widgets/IntegrationInfo/index.html')
+      @@include('../../widgets/IntegrationItems/index.html')
+      @@include('../../widgets/Questions/extended.html')
+      @@include('../../widgets/Gallery/index.html')
+      @@include('../../widgets/VideoReviews/index.html')
+      @@include('../../widgets/Form/index.html')
+      @@include('../../widgets/About/index.html')
+      @@include('../../widgets/FAQ/index.html')
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

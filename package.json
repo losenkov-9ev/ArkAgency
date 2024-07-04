@@ -26,8 +26,11 @@
 		"magnific-popup": "^1.1.0",
 		"masonry-layout": "^4.2.2",
 		"micromodal": "^0.4.10",
+		"mixitup": "^3.3.1",
 		"rateyo": "^3.0.0-alpha.2",
-		"select2": "^4.1.0-rc.0"
+		"select2": "^4.1.0-rc.0",
+		"swiper": "^11.1.4",
+		"through2": "^4.0.2"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
@@ -44,7 +47,7 @@
 		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
 		"gulp-pug": "latest",
-		"gulp-rename": "latest",
+		"gulp-rename": "^2.0.0",
 		"gulp-replace": "latest",
 		"gulp-sass": "latest",
 		"gulp-svg-sprite": "latest",
@@ -57,7 +60,6 @@
 		"gulp-zip": "latest",
 		"inputmask": "^5.0.7",
 		"sass": "latest",
-		"swiper": "^8.3.2",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
 		"webpack": "latest",
