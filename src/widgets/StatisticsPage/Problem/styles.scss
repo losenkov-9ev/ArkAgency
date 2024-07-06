@@ -12,4 +12,10 @@
     height: 215px;
     flex: none;
   }
+
+  @media (max-width: $screen-xl) {
+    &__content-image {
+      display: none;
+    }
+  }
 }

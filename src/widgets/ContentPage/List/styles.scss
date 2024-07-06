@@ -19,4 +19,10 @@
       line-height: 114%;
     }
   }
+
+  @media (max-width: $screen-sm) {
+    &__item-number {
+      width: 40px;
+    }
+  }
 }

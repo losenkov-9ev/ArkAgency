@@ -57,4 +57,14 @@
       color: $secondary;
     }
   }
+
+  @media (max-width: $screen-lg) {
+    &-banner__image {
+      display: none;
+    }
+    &-banner__inner {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
 }

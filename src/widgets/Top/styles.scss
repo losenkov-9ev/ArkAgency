@@ -27,6 +27,11 @@
     margin-top: 38px;
   }
 
+  &.top--content .top__info {
+    .top__info-benefits {
+      display: none;
+    }
+  }
   &.top--content .top__inner {
     align-items: flex-start;
   }
@@ -130,6 +135,30 @@
   }
 
   @media (max-width: $screen-md) {
+    &.top--case {
+      .top__inner {
+        flex-direction: column-reverse;
+        gap: 40px;
+      }
+    }
+    &.top--content {
+      .top__info {
+        .top__info-benefits {
+          display: flex;
+          margin: 0;
+        }
+      }
+      .top__content {
+        .top__info-benefits {
+          display: none;
+        }
+      }
+      .top__title {
+        br {
+          display: none;
+        }
+      }
+    }
     &__inner {
       flex-direction: column;
     }

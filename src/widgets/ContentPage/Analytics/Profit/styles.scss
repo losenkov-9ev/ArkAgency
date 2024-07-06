@@ -57,4 +57,20 @@
     grid-template-rows: repeat(4, 240px);
     grid-gap: 35px 30px;
   }
+
+  @media (max-width: $screen-lg) {
+    &__box {
+      grid-template-rows: repeat(4, auto);
+    }
+    &__image {
+      display: none;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+  }
 }

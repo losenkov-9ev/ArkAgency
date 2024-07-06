@@ -3,7 +3,7 @@ import { CountUp } from 'countup.js';
 export class About {
   constructor({ counterSelector }) {
     this.$coutnerItems = document.querySelectorAll(counterSelector);
-    this.init();
+    window.innerWidth > 768 && this.init();
   }
 
   init() {
@@ -22,7 +22,7 @@ export class About {
   counter(arrayOfProperties) {
     window.addEventListener('load', () => {
       arrayOfProperties.forEach((obj) => {
-        new CountUp(obj.$el, obj.count, obj.properties);
+        const counter = new CountUp(obj.$el, obj.count, obj.properties);
       });
     });
   }

@@ -35,4 +35,14 @@
       color: $light-text;
     }
   }
+
+  @media (max-width: $screen-sm) {
+    background-color: $secondary;
+    padding: 60px 0;
+
+    &__inner {
+      flex-direction: column;
+      color: #fff;
+    }
+  }
 }

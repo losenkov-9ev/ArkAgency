@@ -1,6 +1,7 @@
 import { TopParallax } from '../../widgets/Top/index.js';
 import { Reviews } from '../../widgets/Reviews/index.js';
 import { Quiz } from '../../widgets/Quiz/index.js';
+import { RatesSlider } from '../../widgets/Rates/index.js';
 
 export class Rates {
   constructor() {
@@ -15,5 +16,6 @@ export class Rates {
       itemSelector: '.quiz__item',
       buttonSelector: '.quiz__item-button',
     });
+    const sliderInstance = new RatesSlider();
   }
 }

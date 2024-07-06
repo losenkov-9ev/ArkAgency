@@ -32,6 +32,7 @@
     max-width: 100%;
     width: 100%;
     margin-bottom: 30px;
+    gap: 30px;
   }
   &__item-problem {
     max-width: 459px;
@@ -41,5 +42,37 @@
     max-width: 490px;
     width: 100%;
     color: $secondary;
+  }
+  &__item-solution--mobile,
+  &__item-icon--mobile {
+    display: none;
+  }
+
+  @media (max-width: $screen-sm) {
+    &__item-solution,
+    &__item-icon {
+      display: none;
+    }
+
+    &__item-solution--mobile,
+    &__item-icon--mobile {
+      display: block;
+    }
+    &__item-icon--mobile {
+      width: 107px;
+      height: 107px;
+    }
+    &__item-solution--mobile {
+      margin-bottom: 30px;
+      br {
+        display: none;
+      }
+    }
+    &__item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
   }
 }

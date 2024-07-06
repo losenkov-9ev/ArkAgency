@@ -45,4 +45,30 @@
       }
     }
   }
+
+  @media (max-width: $screen-md) {
+    &__item {
+      flex-direction: column;
+      gap: 24px;
+    }
+    &__item-content {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__item-name {
+      max-width: 100%;
+      width: 100%;
+      span {
+        color: $light-accent;
+        font-size: 54px;
+        margin-right: 30px;
+      }
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 114%;
+    }
+  }
 }

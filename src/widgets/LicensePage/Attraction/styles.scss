@@ -35,4 +35,17 @@
       flex: none;
     }
   }
+
+  @media (max-width: $screen-sm) {
+    &__head {
+      font-size: 36px;
+      line-height: 114%;
+    }
+    &__content-image {
+      margin-left: -100px;
+    }
+    &__head-image {
+      margin-right: -100px;
+    }
+  }
 }

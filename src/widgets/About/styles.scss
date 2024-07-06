@@ -74,4 +74,52 @@
       font-size: 58px;
     }
   }
+
+  @media (max-width: $screen-xl) {
+    &__image {
+      margin-left: -500px;
+    }
+  }
+  @media (max-width: $screen-lg) {
+    &__content {
+      max-width: 100%;
+      padding-left: 320px;
+    }
+  }
+  @media (max-width: $screen-md) {
+    &__inner {
+      padding: 160px 0;
+    }
+    &__box {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+      padding-left: 10px;
+    }
+    &__item {
+      margin-left: 270px;
+    }
+    &__item-value {
+      font-size: 100px;
+    }
+    &__item-text {
+      font-size: 22px;
+      line-height: 114%;
+    }
+    &__image {
+      margin-left: -560px;
+    }
+    .defaultButton {
+      max-width: 100% !important;
+      width: 100%;
+      margin-left: 10px;
+      margin-top: 60px;
+      border: 1px solid #000;
+      color: #000;
+      background-color: #fff;
+    }
+  }
 }

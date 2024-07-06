@@ -1,6 +1,6 @@
 .footer {
   padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 
   background-image: url('../@img/global/footer-bg.jpg');
   background-size: cover;
@@ -14,11 +14,17 @@
 
   &__box {
     display: grid;
-    grid-template-columns: 90px repeat(4, 1fr) 356px;
-    grid-gap: 84px;
+    grid-template-columns: 90px minmax(800px, 600px) 356px;
+    grid-gap: 24px;
     margin-bottom: 8px;
+    justify-content: space-between;
   }
-
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
   &__column-title {
     font-weight: 700;
     margin-bottom: 19px;
@@ -75,20 +81,76 @@
     }
   }
 
-  &__info {
-    display: flex;
-    align-items: center;
-    gap: 110px;
-    font-size: 18px;
-  }
   &__info-policy {
     color: $secondary !important;
     text-decoration: underline;
+    font-size: 18px;
+    margin-left: 300px;
+    transform: translateY(-60px);
   }
   &__info-links {
     display: flex;
     flex-direction: column;
     gap: 1px;
     margin-left: auto;
+    margin-top: 48px;
+    font-size: 18px;
+  }
+  &__info-copy {
+    margin-top: 140px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__box {
+      grid-template-columns: 90px minmax(250px, 600px) minmax(250px, 356px);
+      align-items: stretch;
+    }
+    &__columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+    &__info-policy {
+      margin-left: 0px;
+      transform: translateY(0px);
+    }
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+    }
+    &__info-links {
+      margin-top: auto;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__box {
+      grid-template-columns: 90px minmax(250px, 600px);
+      grid-gap: 24px;
+      align-items: stretch;
+    }
+    &__contacts {
+      flex-direction: row;
+      grid-column: span 2;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &__info-links {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 450px) {
+    &__contacts {
+      display: block;
+    }
+    &__contacts-box {
+      max-width: 380px;
+    }
   }
 }

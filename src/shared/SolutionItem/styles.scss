@@ -8,5 +8,6 @@
   img {
     overflow: hidden;
     border-radius: $default-borderRadius;
+    min-width: 100px;
   }
 }

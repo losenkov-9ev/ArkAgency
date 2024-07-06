@@ -11,4 +11,16 @@ export const reviewsSliderConfig = {
   },
   slidesPerView: 3,
   spaceBetween: 20,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1366: {
+      slidesPerView: 3,
+    },
+  },
 };

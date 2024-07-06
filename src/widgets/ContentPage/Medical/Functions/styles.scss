@@ -1,3 +1,17 @@
 .medicalFunctions {
   margin-bottom: 120px;
+
+  img.medicalFunctions-mobileBg {
+    display: none;
+  }
+
+  @media (max-width: $screen-sm) {
+    img {
+      margin: 0 -10px;
+      display: none;
+      &.medicalFunctions-mobileBg {
+        display: block;
+      }
+    }
+  }
 }

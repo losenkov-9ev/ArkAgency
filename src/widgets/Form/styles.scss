@@ -51,6 +51,21 @@
       color: $light-text;
     }
   }
+
+  @media (max-width: $screen-sm) {
+    &__inputWrapper {
+      flex-direction: column;
+    }
+    &__input {
+      max-width: 100%;
+      width: 100%;
+    }
+    .defaultButton {
+      max-width: 100% !important;
+      width: 100%;
+      padding: 13px;
+    }
+  }
 }
 
 .formExpanded {
@@ -167,5 +182,15 @@
   .formExpanded__checkbox-link {
     color: $secondary;
     text-decoration: underline;
+  }
+
+  @media (max-width: $screen-lg) {
+    padding: 22px 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &__input {
+      padding: 12px 40px;
+    }
   }
 }

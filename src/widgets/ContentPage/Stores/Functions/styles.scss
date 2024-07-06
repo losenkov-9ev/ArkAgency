@@ -50,4 +50,24 @@
   .defaultButton {
     margin: 0 auto;
   }
+
+  @media (max-width: 1200px) {
+    &__table {
+      padding: 43px 37px;
+    }
+    &__table-item {
+      flex-direction: column;
+      padding-bottom: 35px;
+    }
+    &__table-name {
+      padding: 0;
+      max-width: 100%;
+      margin-bottom: 30px;
+      border-right: 0;
+    }
+    &__table-content {
+      padding-left: 0;
+      padding-top: 0 !important;
+    }
+  }
 }

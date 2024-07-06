@@ -44,4 +44,10 @@
   &__item + .faq__item {
     margin-top: 30px;
   }
+
+  @media (max-width: $screen-sm) {
+    &__item-head {
+      font-size: 25px;
+    }
+  }
 }

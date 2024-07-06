@@ -14,4 +14,24 @@
   .defaultButton {
     margin: 0 auto;
   }
+
+  @media (max-width: $screen-lg) {
+    &__box {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: $screen-md) {
+    &__box {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__box {
+      grid-gap: 16px;
+      grid-template-columns: repeat(2, minmax(200px, 500px));
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
 }

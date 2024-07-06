@@ -13,4 +13,10 @@
   .defaultButton {
     margin: 0 auto;
   }
+
+  @media (max-width: $screen-md) {
+    &__box {
+      flex-direction: column;
+    }
+  }
 }

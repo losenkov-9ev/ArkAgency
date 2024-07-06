@@ -15,6 +15,9 @@
     gap: 30px;
     margin-bottom: 30px;
   }
+  &__text--mobile {
+    display: none;
+  }
   &__textImage {
     width: 290px;
     height: 290px;
@@ -129,5 +132,64 @@
   .defaultButton {
     margin: 0 auto;
     margin-top: -40px;
+  }
+
+  @media (max-width: $screen-md) {
+    &__text {
+      display: none;
+    }
+    &__text--mobile {
+      display: block;
+      margin-bottom: 30px;
+      p + p {
+        margin-top: 30px;
+      }
+    }
+    &__textImage-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__content-tabs {
+      padding: 0;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__content-info {
+      position: relative;
+    }
+    .solution__content-tabsItem {
+      font-size: 18px;
+    }
+    &__content-tip {
+      position: absolute;
+      max-width: 270px;
+      padding-left: 0;
+      padding-bottom: 109px;
+      padding-left: 10px;
+
+      &::before {
+        display: none;
+      }
+    }
+    &__content-box {
+      flex-direction: column;
+    }
+    &__contentImage {
+      margin-left: auto;
+    }
+    .defaultButton {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .solution__textImage {
+      margin-left: -145px;
+    }
   }
 }

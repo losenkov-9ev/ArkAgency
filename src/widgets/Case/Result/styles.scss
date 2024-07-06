@@ -16,4 +16,11 @@
     height: 123px;
     flex: none;
   }
+
+  @media (max-width: $screen-sm) {
+    &__item {
+      font-size: 22px;
+      gap: 30px;
+    }
+  }
 }

@@ -49,4 +49,49 @@
     padding-left: 48px;
     padding-top: 10px;
   }
+
+  @media (max-width: $screen-xl) {
+    &__item {
+      padding: 36px;
+      border: 1px solid #909090;
+      border-radius: 48px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+      &:not(:nth-child(odd)) {
+        .developersProblems__item-type {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+      }
+    }
+    &__item + .developersProblems__item {
+      margin-top: 30px;
+    }
+    &__item-type {
+      grid-column: span 2;
+      padding: 0 !important;
+    }
+    &__item-plus {
+      border-left: none;
+      padding-left: 0;
+    }
+    &__item-plus,
+    &__item-minus {
+      padding: 0 !important;
+    }
+    &__item-plus {
+      padding-right: 30px !important;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__item {
+      font-size: 22px;
+    }
+    &__item-icon {
+      width: 108px;
+      height: 108px;
+    }
+  }
 }

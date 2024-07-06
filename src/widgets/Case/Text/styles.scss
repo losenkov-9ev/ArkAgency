@@ -9,4 +9,16 @@
     height: 123px;
     flex: none;
   }
+
+  @media (max-width: $screen-sm) {
+    &__content {
+      display: block;
+    }
+    &__image {
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      float: left;
+    }
+  }
 }

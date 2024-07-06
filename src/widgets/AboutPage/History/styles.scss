@@ -95,4 +95,19 @@
     line-height: 114%;
     color: #fff;
   }
+
+  @media (max-width: $screen-xl) {
+    &__box {
+      flex-direction: column;
+      &::before {
+        display: none;
+      }
+    }
+    &__image {
+      display: none;
+    }
+    &__item {
+      transform: translateY(0) translateX(0) !important;
+    }
+  }
 }

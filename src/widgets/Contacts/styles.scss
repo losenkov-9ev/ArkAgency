@@ -39,4 +39,14 @@
       border-radius: 50%;
     }
   }
+
+  @media (max-width: $screen-sm) {
+    &__links {
+      flex-direction: column;
+      gap: 60px;
+    }
+    &__default {
+      margin-right: auto;
+    }
+  }
 }

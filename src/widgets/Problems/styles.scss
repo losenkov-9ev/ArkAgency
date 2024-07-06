@@ -65,4 +65,40 @@
   .defaultButton {
     margin: 0 auto;
   }
+
+  @media (max-width: $screen-sm) {
+    &__sum-item {
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 104px;
+
+      &::before {
+        content: '+';
+        font-size: 60px;
+        color: $text;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 700;
+      }
+
+      &:last-child {
+        padding-bottom: 80px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    &__sum-itemLeft {
+      &::before {
+        display: none;
+      }
+    }
+    &__sum-itemLeft,
+    &__sum-itemRight {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }

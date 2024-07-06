@@ -58,4 +58,28 @@
   &__content-title {
     margin-bottom: 30px;
   }
+
+  @media (max-width: $screen-sm) {
+    &__item {
+      display: grid;
+
+      &:nth-of-type(odd) {
+        grid-template-columns: 1fr 150px;
+
+        .medicalClients__item-icon {
+          grid-column: 2 / 3;
+          grid-row: 1 / 3;
+        }
+      }
+
+      &:nth-of-type(even) {
+        grid-template-columns: 150px 1fr;
+
+        .medicalClients__item-icon {
+          grid-column: 1 / 2;
+          grid-row: 1 / 3;
+        }
+      }
+    }
+  }
 }

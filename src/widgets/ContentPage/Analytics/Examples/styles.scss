@@ -13,4 +13,10 @@
   &__item + .analyticsExamples__item {
     margin-top: 30px;
   }
+
+  @media (max-width: $screen-sm) {
+    &__item {
+      gap: 30px;
+    }
+  }
 }

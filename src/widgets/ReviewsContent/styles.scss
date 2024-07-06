@@ -7,4 +7,17 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px 59px;
   }
+
+  @media (max-width: $screen-sm) {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .pageHead {
+      font-size: 36px;
+      // text-transform: uppercase;
+      border-bottom: 0;
+    }
+  }
 }

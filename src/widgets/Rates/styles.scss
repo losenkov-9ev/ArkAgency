@@ -1,3 +1,5 @@
+@import '../../app/styles/libs/swiper';
+
 .rates {
   margin-top: 120px;
 
@@ -14,6 +16,7 @@
     .rates__item {
       padding: 56px 34px;
       gap: 30px;
+      width: auto;
     }
     .rates__item-price {
       color: $accent;
@@ -31,6 +34,15 @@
     }
     .rates__item-head {
       margin-bottom: 0;
+    }
+
+    .swiper-slide {
+      height: auto;
+      display: flex;
+    }
+
+    .swiper-wrapper {
+      padding-bottom: 60px;
     }
   }
 
@@ -93,7 +105,65 @@
     margin-top: 24px;
   }
 
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  &__controls-arrow {
+    cursor: pointer;
+  }
+  &__controls-pagination {
+    width: auto !important;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+      opacity: 1;
+      background-color: #fff;
+      border: 2px solid $accent;
+
+      &:not(.swiper-pagination-bullet-active) {
+        margin-top: -0.2px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
   .defaultButton {
     margin: 0 auto;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__box {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    .sectionHead {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 114%;
+    }
+    .defaultButton {
+      font-size: 22px;
+    }
+
+    &__item {
+      .defaultButton {
+        margin-left: -10px;
+      }
+    }
   }
 }

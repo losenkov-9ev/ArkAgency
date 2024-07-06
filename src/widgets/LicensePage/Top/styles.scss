@@ -20,6 +20,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    gap: 30px;
   }
 
   &__content {
@@ -35,5 +36,27 @@
     line-height: 78px;
     font-weight: 700;
     text-align: center;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__wrapper {
+      position: relative;
+      padding-bottom: 60px;
+      padding-top: 86px;
+    }
+    &__title {
+      margin-bottom: 54px;
+    }
+    &__image {
+      position: absolute;
+      top: 62px;
+      left: 10px;
+      width: 136px;
+    }
+  }
+  @media (max-width: 500px) {
+    &__image {
+      display: none;
+    }
   }
 }
