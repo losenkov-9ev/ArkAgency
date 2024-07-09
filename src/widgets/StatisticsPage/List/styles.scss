@@ -70,4 +70,16 @@
       color: $secondary;
     }
   }
+
+  @media (max-width: $screen-lg) {
+    &-banner {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+    &-banner__inner {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
 }

@@ -33,16 +33,38 @@ export class MenuModal {
       });
   };
 
+  isModalElement = (target) => {
+    const clickObject = {
+      $target: null,
+      modalOpenElement: false,
+    };
+
+    switch (true) {
+      case target.classList.contains(this.openModalSelector):
+        clickObject.$target = target;
+        clickObject.modalOpenElement = true;
+        break;
+      case target.parentNode.classList.contains(this.openModalSelector):
+        clickObject.$target = target.parentNode;
+        clickObject.modalOpenElement = true;
+        break;
+
+      default:
+        break;
+    }
+
+    return clickObject;
+  };
+
   menuListener = (event) => {
     event.preventDefault();
-    const $target = event.target;
+    const { $target, modalOpenElement } = this.isModalElement(event.target);
 
-    if ($target.classList.contains(this.openModalSelector)) {
+    modalOpenElement &&
       this.toggleModal({
         isOpen: !this.isModalOpen,
         $element: $target,
       });
-    }
   };
 
   toggleModal = ({ isOpen = true, $element = '' }) => {
