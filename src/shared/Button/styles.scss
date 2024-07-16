@@ -1,5 +1,5 @@
 %whiteStyles {
-  background-color: #fff;
+  background: #fff;
   color: #000;
 
   svg path {
@@ -73,9 +73,13 @@
 
   &.hover--accent:hover {
     background-color: $accent;
+    color: #fff;
+    border-color: transparent;
   }
   &.hover--accentLight:hover {
     background-color: $light-accent;
+    color: #fff;
+    border-color: transparent;
   }
 
   &.hover--whiteBorderShadow:hover {

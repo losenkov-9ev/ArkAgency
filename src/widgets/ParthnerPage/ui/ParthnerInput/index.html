@@ -1,0 +1,61 @@
+@@if (inputType === "input") {
+  <div class="parthnerInput">
+    <div class="parthnerInput__tip">
+      @@tip
+    </div>
+    <div class="parthnerInput__wrapper">
+      <input type="text" class="parthnerInput__field" placeholder="@@placeholder" value="@@value">
+      <button class="parthnerInput__edit">
+        <img src="@img/icons/edit.png" alt="">
+      </button>
+    </div>
+  </div>  
+}
+@@if (inputType === "email") {
+  <div class="parthnerInput">
+    <div class="parthnerInput__tip">
+      @@tip
+    </div>
+    <div class="parthnerInput__wrapper">
+      <input type="email" class="parthnerInput__field" placeholder="@@placeholder" value="@@value">
+      <button class="parthnerInput__edit">
+        <img src="@img/icons/edit.png" alt="">
+      </button>
+    </div>
+  </div>  
+}
+@@if (inputType === "phone") {
+  <div class="parthnerInput">
+    <div class="parthnerInput__tip">
+      @@tip
+    </div>
+    <div class="parthnerInput__wrapper">
+      <input type="text" class="parthnerInput__field phone-input" placeholder="@@placeholder" value="@@value">
+      <button class="parthnerInput__edit">
+        <img src="@img/icons/edit.png" alt="">
+      </button>
+    </div>
+  </div>  
+}
+@@if (inputType === "disabled") {
+  <div class="parthnerInput">
+    <div class="parthnerInput__tip">
+      @@tip
+    </div>
+    <input type="text" disabled class="parthnerInput__field" value="@@value">
+  </div>  
+}
+
+@@if (inputType === "calendar") {
+  <div class="parthnerInput">
+    <div class="parthnerInput__tip">
+      @@tip
+    </div>
+    <div class="parthnerInput__wrapper">
+      <input type="text" id="calendar-field" class="parthnerInput__field" placeholder="@@placeholder" value="@@value">
+      <button class="parthnerInput__edit" id="calendar-button">
+        <img src="@img/icons/calendar.svg" alt="">
+      </button>
+    </div>
+  </div>  
+}

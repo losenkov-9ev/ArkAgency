@@ -1,0 +1,24 @@
+<div id="cooperation-form" class="form form--cooperation">
+  <div class="form__inner container">
+    <div class="form__title">
+      Хотите стать нашим партнером?
+    </div>
+    <form class="form__box">
+      <div class="form__inputWrapper">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="text" class="form__input phone-input" placeholder="Номер телефона">
+        <input type="email" class="form__input" placeholder="E - mail">
+        <input type="text" class="form__input" placeholder="Промокод">
+      </div>
+
+      @@include('../../shared/Button/DefaultButton.html', {
+        text: "Создать личный офис партнера",
+        arrow: "false",
+        size: "large",
+        maxWidth: "100%",
+        color: "accent",
+        hoverColor: "hover--whiteBorderShadow",
+      })
+    </form>
+  </div>
+</div>

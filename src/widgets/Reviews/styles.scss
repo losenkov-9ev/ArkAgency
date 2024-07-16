@@ -29,8 +29,8 @@
     overflow: hidden;
     width: 258px;
     height: 258px;
-    margin-bottom: 20px;
     margin: 0 auto;
+    margin-bottom: 20px;
 
     img {
       object-fit: cover;
@@ -55,7 +55,7 @@
   }
 
   &__controls {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -85,6 +85,12 @@
     .swiper-pagination-bullet-active {
       width: 12px;
       height: 12px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__controls {
+      display: flex;
     }
   }
 }

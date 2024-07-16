@@ -1,0 +1,116 @@
+<div class="parthnerData">
+  @@include('../ui/ParthnerTabs/index.html', {
+    tab: "data"
+  })
+  <div class="parthnerData__box">
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "disabled",
+      tip: "Спонсор",
+      placeholder: "",
+      value: "Федоров Владимир Владимирович"
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "ФИО",
+      placeholder: "Иванова Мария Семеновна",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "calendar",
+      tip: "Дата рождения",
+      placeholder: "25.05.1986",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "phone",
+      tip: "Номер телефона",
+      placeholder: "+7 999 900 00 00",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "email",
+      tip: "E-mail",
+      placeholder: "Введите электронную почту",
+      value: ""
+    })
+    <div class="parthnerData__radioBox">
+      @@include('../ui/ParthnerRadio/index.html', {
+        tip: "Юр. лицо",
+        checked: true,
+      })
+      @@include('../ui/ParthnerRadio/index.html', {
+        tip: "Физ. лицо",
+        checked: false,
+      })
+    </div>
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "ИНН",
+      placeholder: "Номер",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "Банк",
+      placeholder: "Наименование",
+      value: ""
+    })
+    <div class="parthnerData__inputBox">
+      @@include('../ui/ParthnerInput/index.html', {
+        inputType: "input",
+        tip: "КПП банка",
+        placeholder: "Номер",
+        value: ""
+      })
+      @@include('../ui/ParthnerInput/index.html', {
+        inputType: "input",
+        tip: "ИНН банка",
+        placeholder: "Номер",
+        value: ""
+      })
+    </div>
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "Корр. счет",
+      placeholder: "Номер",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "Расчетный счет",
+      placeholder: "Номер",
+      value: ""
+    })
+    @@include('../ui/ParthnerInput/index.html', {
+      inputType: "input",
+      tip: "БИК",
+      placeholder: "Номер",
+      value: ""
+    })
+    <div class="parthnerData__buttons">
+      @@include('../../../shared/Button/DefaultButton.html', {
+        text: "Сохранить изменения",
+        arrow: "false",
+        size: "normal",
+        maxWidth: "100%",
+        color: "accent-light",
+        hoverColor: "accent",
+      })
+      <button class="parthnerNews__logout">
+        <span>Выйти из аккаунта</span>
+        <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2280_567)">
+          <path d="M2.0625 23.8125H12.1875C12.6349 23.8121 13.0639 23.6341 13.3802 23.3177C13.6966 23.0014 13.8746 22.5724 13.875 22.125V19.5938H12.1875V22.125H2.0625V1.875H12.1875V4.40625H13.875V1.875C13.8746 1.42758 13.6966 0.998622 13.3802 0.682251C13.0639 0.36588 12.6349 0.187947 12.1875 0.1875H2.0625C1.61508 0.187947 1.18612 0.36588 0.869751 0.682251C0.55338 0.998622 0.375447 1.42758 0.375 1.875V22.125C0.375447 22.5724 0.55338 23.0014 0.869751 23.3177C1.18612 23.6341 1.61508 23.8121 2.0625 23.8125Z" fill="#9B2D30"/>
+          <path d="M14.3694 15.8694L17.3951 12.8438H5.4375V11.1562H17.3951L14.3694 8.13056L15.5625 6.9375L20.625 12L15.5625 17.0625L14.3694 15.8694Z" fill="#9B2D30"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_2280_567">
+          <rect width="21" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>  
+      </button>
+    </div>
+    
+  </div>
+</div>

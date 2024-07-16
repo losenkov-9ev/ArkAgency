@@ -1,0 +1,105 @@
+.parthnerNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 64px;
+
+  .defaultButton {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    padding: 41px 22px;
+    padding-right: 48px;
+
+    border: 2px solid #909090;
+    border-radius: 25px;
+
+    display: flex;
+    gap: 23px;
+  }
+  &__item-image {
+    width: 126px;
+    height: 118px;
+
+    border-radius: 25px;
+    overflow: hidden;
+    flex: none;
+  }
+  &__item-title {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5%;
+    margin-bottom: 15px;
+  }
+  &__item-box {
+    position: relative;
+  }
+
+  a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__logout {
+    align-items: center;
+    gap: 19px;
+    padding: 9px 25px;
+    border: 1px solid #242424;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 60px;
+  }
+
+  .blog__pagination {
+    padding: 0px 14px;
+    border-radius: 10px;
+    border: 1px solid $light-text;
+    display: inline-flex;
+    gap: 22px;
+
+    &-item {
+      font-weight: 700;
+      color: $text;
+      padding: 4px;
+      position: static;
+    }
+    &-item.blog__pagination-item--active {
+      color: $light-accent;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    border: none;
+    padding: 0;
+
+    &__item:not(:first-of-type) {
+      display: none;
+    }
+
+    &__item {
+      p {
+        font-size: 20px;
+        line-height: 114%;
+      }
+    }
+
+    &__logout {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.parthnerData {
+  padding-right: 64px;
+  border-right: 2px solid #909090;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__radioBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    max-width: 380px;
+  }
+  &__inputBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    .parthnerInput {
+      max-width: 300px;
+    }
+  }
+
+  .defaultButton {
+    font-weight: 400;
+  }
+  &__buttons {
+    max-width: 100%;
+    width: 100%;
+
+    .parthnerNews__logout {
+      display: none;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    border: none;
+    padding: 0;
+
+    &__buttons {
+      display: flex;
+      font-size: 18px !important;
+      line-height: 114%;
+      justify-content: space-between;
+      .defaultButton {
+        font-size: 18px !important;
+        line-height: 114% !important;
+        height: auto;
+        padding: 12px 2px;
+        width: 45%;
+      }
+      .parthnerNews__logout {
+        font-size: 19px !important;
+        line-height: 114%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin: 0;
+        width: 48%;
+      }
+    }
+  }
+}

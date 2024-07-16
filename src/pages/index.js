@@ -87,6 +87,33 @@ export class Pages {
           console.error('Ошибка при загрузке модуля:', error);
         }
       })();
+    } else if (checkPage('parthner-page')) {
+      (async function () {
+        try {
+          const _module = await import('./Parthner/index.js');
+          new _module.Parthner();
+        } catch (error) {
+          console.error('Ошибка при загрузке модуля:', error);
+        }
+      })();
+    } else if (checkPage('cooperation-page')) {
+      (async function () {
+        try {
+          const _module = await import('./Cooperation/index.js');
+          new _module.Cooperation();
+        } catch (error) {
+          console.error('Ошибка при загрузке модуля:', error);
+        }
+      })();
+    } else if (checkPage('single-page')) {
+      (async function () {
+        try {
+          const _module = await import('./Single/index.js');
+          new _module.Single();
+        } catch (error) {
+          console.error('Ошибка при загрузке модуля:', error);
+        }
+      })();
     }
   }
 }

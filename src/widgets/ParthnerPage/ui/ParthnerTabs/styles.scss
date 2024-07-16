@@ -1,0 +1,29 @@
+.parthnerTabs {
+  max-width: 100%;
+  width: 100%;
+  border-bottom: 2px solid#909090;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 60px;
+
+  &__item {
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.5%;
+    padding-bottom: 15px;
+    color: inherit;
+
+    &.active {
+      font-weight: 700;
+      border-bottom: 2px solid $light-accent;
+      margin-bottom: -2px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &__item {
+      font-size: 19px;
+    }
+  }
+}

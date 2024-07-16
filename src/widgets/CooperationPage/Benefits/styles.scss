@@ -1,0 +1,130 @@
+.cooperationBenefits {
+  margin-bottom: 120px;
+  &__text {
+    margin-bottom: 120px;
+    span {
+      color: $accent;
+      font-weight: 500;
+    }
+  }
+  &__text-box {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  &__text-item {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+
+    p {
+      max-width: 819px;
+    }
+    .defaultButton {
+      flex: none;
+    }
+  }
+
+  &__about {
+    padding: 60px 30px;
+    border: 2px solid #909090;
+    border-radius: 48px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  &__about-title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 41px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__about-box {
+    display: flex;
+  }
+  &__about-item {
+    max-width: 440px;
+    &:nth-child(1) {
+      padding-right: 30px;
+    }
+    &:nth-child(3) {
+      padding-left: 30px;
+    }
+    &:nth-child(2) {
+      padding: 0 30px;
+      border-right: 1px solid #909090;
+      border-left: 1px solid #909090;
+      max-width: 470px;
+    }
+  }
+  &__about-itemNumber {
+    width: 115px;
+    height: 115px;
+    background-color: $light-accent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 900;
+    color: #fff;
+    font-size: 54px;
+    line-height: 61px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__about-itemTitle {
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    min-height: 54px;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__text-item {
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+      gap: 15px;
+
+      p {
+        max-width: 100%;
+      }
+      .defaultButton {
+        max-width: 100% !important;
+      }
+    }
+    &__about-box {
+      flex-direction: column;
+    }
+    &__about-item {
+      max-width: 100%;
+      &:nth-child(1) {
+        padding-right: 0px;
+        padding-bottom: 30px;
+      }
+      &:nth-child(3) {
+        padding-top: 30px;
+        padding-left: 0;
+      }
+      &:nth-child(2) {
+        padding: 30px 0;
+        border: none;
+        border-top: 1px solid #909090;
+        border-bottom: 1px solid #909090;
+        max-width: 100%;
+      }
+    }
+  }
+  @media (max-width: $screen-md) {
+    &__about-title {
+      font-size: 26px;
+      line-height: 114%;
+    }
+  }
+}

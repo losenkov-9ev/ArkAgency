@@ -1,0 +1,35 @@
+@import '../../app/style';
+@import '../../../node_modules/pikaday/scss/pikaday';
+
+@import '../../widgets/ParthnerPage/ParthnerData/styles';
+@import '../../widgets/ParthnerPage/ParthnerNews/styles';
+@import '../../widgets/ParthnerPage/ParthnerAnalytics/styles';
+@import '../../widgets/ParthnerPage/ParthnerClients/styles';
+@import '../../widgets/ParthnerPage/ParthnerWallet/styles';
+@import '../../widgets/ParthnerPage/ui/ParthnerInput/styles';
+@import '../../widgets/ParthnerPage/ui/ParthnerTabs/styles';
+@import '../../widgets/ParthnerPage/ui/ParthnerRadio/styles';
+@import '../../widgets/ParthnerPage/ui/ParthnerList/styles';
+
+@import '../../widgets/FAQ/styles';
+
+// shared
+@import '../../shared/SectionHead/styles';
+
+.parthner__box {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $screen-lg) {
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "cooperation"})
+  <body class="cooperation-page">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+      
+      @@include('../../widgets/Top/cooperation.html', {
+        image: "@img/global/TopImage-cooperation.jpg",
+        title: "Получайте от <span>7900</span> руб с каждого приведенного клиента на разработку <span>CRM</span> системы"
+      })
+
+      @@include('../../widgets/CooperationPage/About/index.html')
+      @@include('../../widgets/CooperationPage/Benefits/index.html')
+
+      @@include('../../widgets/Form/cooperation.html')
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

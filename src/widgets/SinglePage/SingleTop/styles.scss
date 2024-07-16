@@ -1,0 +1,157 @@
+.singleTop {
+  margin: 120px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__content {
+    max-width: 731px;
+
+    .top__info-benefits {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    .top__title {
+      text-transform: none;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__form {
+    background-image: url('../@img/global/TopImage-single.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 48px;
+    overflow: hidden;
+    max-width: 632px;
+    width: 100%;
+    padding: 62px 48px;
+    padding-right: 70px;
+    color: #fff;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 255px;
+      right: 0;
+    }
+
+    &-title {
+      font-size: 36px;
+      line-height: 114%;
+      font-weight: 700;
+      margin-bottom: 52px;
+
+      span {
+        color: $secondary;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__form-inputWrapper {
+    max-width: 365px;
+    width: 100%;
+  }
+  &__form-input {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 48px;
+  }
+  &__form-inputWrapper + .singleTop__form-inputWrapper {
+    margin-top: 36px;
+  }
+
+  .formExpanded__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 36px;
+    margin-top: 25px;
+  }
+
+  .formExpanded__checkbox-input {
+    display: none; /* Скрываем стандартный чекбокс */
+  }
+
+  .formExpanded__checkbox-custom {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px; /* Отступ для текста */
+    flex: none;
+  }
+
+  .formExpanded__checkbox-input:checked + .formExpanded__checkbox-custom::before {
+    content: '';
+    width: 12px; /* Внутренний кружок меньше, чтобы был виден внешний */
+    height: 12px;
+    background-color: $text;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .formExpanded__checkbox-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .formExpanded__checkbox-link {
+    color: $secondary;
+    text-decoration: underline;
+  }
+
+  &__mobileButton {
+    display: none;
+  }
+
+  @media (max-width: $screen-lg) {
+    &__inner {
+      flex-direction: column;
+    }
+    .top__title {
+      br {
+        display: none;
+      }
+    }
+    &__content {
+      max-width: 100%;
+      width: 100%;
+    }
+    .top__info-benefits {
+      margin: 0;
+    }
+    &__mobileButton {
+      display: block;
+    }
+    &__form {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &__form {
+      img {
+        display: none;
+      }
+    }
+  }
+}

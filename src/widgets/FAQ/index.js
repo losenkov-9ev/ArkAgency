@@ -14,6 +14,23 @@ export class FAQ {
 
   toggleItem(e) {
     const $target = e.target.closest(this.itemSelector);
-    $target && $target.classList.toggle(this.activeClass);
+
+    if ($target) {
+      const $content = $target.querySelector('.faq__item-content');
+
+      if ($target.classList.contains(this.activeClass)) {
+        $content.style.opacity = 0;
+
+        setTimeout(() => {
+          $target.classList.remove(this.activeClass);
+        }, 200);
+      } else {
+        $target.classList.add(this.activeClass);
+
+        setTimeout(() => {
+          $content.style.opacity = 1;
+        }, 200);
+      }
+    }
   }
 }

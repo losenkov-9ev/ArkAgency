@@ -1,2 +1,8 @@
 @import '../../app/style';
 @import '../../widgets/Contacts/styles';
+
+.contacts-page {
+  #contacts-link {
+    font-weight: 700;
+  }
+}

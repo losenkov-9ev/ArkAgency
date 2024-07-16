@@ -1,0 +1,122 @@
+<div class="parthnerClients parthnerWallet">
+  @@include('../ui/ParthnerTabs/index.html', {
+    tab: "wallet"
+  })
+
+  <div class="parthnerClients__promo">
+    <div class="parthnerClients__promo-title">
+      Мой баланс
+    </div>
+    <div class="parthnerClients__promo-box">
+      <div class="parthnerClients__promo-field">
+        <input type="text" class="parthnerClients__promo-input" disabled value="15 000">
+        <div class="parthnerClients__promo-controls">
+          <button>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.47938 17V0.199999H9.39138C11.5994 0.199999 13.3354 0.679999 14.5994 1.64C15.8794 2.584 16.5194 3.984 16.5194 5.84C16.5194 7.68 15.8794 9.08 14.5994 10.04C13.3354 10.984 11.5994 11.456 9.39138 11.456H4.20738L5.59938 10.016V17H2.47938ZM5.59938 10.352L4.20738 8.936H9.36738C10.6474 8.936 11.6314 8.672 12.3194 8.144C13.0234 7.6 13.3754 6.84 13.3754 5.864C13.3754 4.888 13.0234 4.144 12.3194 3.632C11.6314 3.104 10.6474 2.84 9.36738 2.84H4.20738L5.59938 1.304V10.352ZM0.079375 14.504V12.824H10.8794V14.504H0.079375Z" fill="#9B2D30"/>
+            </svg>             
+          </button>
+        </div>
+      </div>
+      @@include('../../../shared/Button/DefaultButton.html', {
+        text: "Вывести",
+        arrow: "false",
+        size: "small",
+        maxWidth: "162px",
+        color: "accent-light",
+        hoverColor: "accent",
+      })
+    </div>
+  </div>
+  <div class="parthnerWallet__faq-title">
+    История транзакций
+  </div>
+  <div class="parthnerClients__faq">
+    <div class="parthnerClients__faq-item opened">
+      <div class="parthnerClients__faq-item-head">
+        1. Внедрение Б24
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="9" fill="#AA0A22"/>
+            <path d="M11.4856 12.3765L5.48932 6.38023L6.38023 5.48932L12.3765 11.4856L11.4856 12.3765ZM6.28133 12.4331L5.4469 11.5987L11.5987 5.4469L12.4331 6.28133L6.28133 12.4331Z" fill="white"/>
+          </svg>
+             
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="9" fill="#AA0A22"/>
+            <path d="M13.17 9.56996L4.68996 9.56997V8.31003L13.17 8.31004L13.17 9.56996ZM9.53004 13.29L8.35 13.29V4.59L9.53004 4.59002L9.53004 13.29Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="parthnerWallet__faq-price">
+          +45 000 ₽
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content" style="display: block; opacity: 1;">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Дата:",
+              date: "10.05.2024"
+            },
+            {
+              text: "От кого пришло пополнение:",
+              date: "Федоров В.В"
+            },
+            {
+              text: "Вознаграждение:",
+              date: "15%"
+            }
+          ]
+        })
+      </div>
+    </div>
+    <div class="parthnerWallet__checkout">
+      <span>2. Вывод средств</span>
+      <span class="parthnerWallet__faq-price">-40 000 ₽</span>
+      <span class="parthnerWallet__faq-date">16.05.2024</span>
+    </div>
+    <div class="parthnerClients__faq-item opened">
+      <div class="parthnerClients__faq-item-head">
+        3. Интеграция UIS
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="9" fill="#AA0A22"/>
+            <path d="M11.4856 12.3765L5.48932 6.38023L6.38023 5.48932L12.3765 11.4856L11.4856 12.3765ZM6.28133 12.4331L5.4469 11.5987L11.5987 5.4469L12.4331 6.28133L6.28133 12.4331Z" fill="white"/>
+          </svg>
+             
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="9" fill="#AA0A22"/>
+            <path d="M13.17 9.56996L4.68996 9.56997V8.31003L13.17 8.31004L13.17 9.56996ZM9.53004 13.29L8.35 13.29V4.59L9.53004 4.59002L9.53004 13.29Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="parthnerWallet__faq-price">
+          +50 000 ₽
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content" style="display: block; opacity: 1;">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Дата:",
+              date: "10.05.2024"
+            },
+            {
+              text: "От кого пришло пополнение:",
+              date: "Петров П.П."
+            },
+            {
+              text: "Вознаграждение:",
+              date: "10%"
+            }
+          ]
+        })
+      </div>
+    </div>
+    <div class="parthnerWallet__checkout">
+      <span>2. Вывод средств</span>
+      <span class="parthnerWallet__faq-price">-40 000 ₽</span>
+      <span class="parthnerWallet__faq-date">18.05.2024</span>
+    </div>
+  </div>
+</div>

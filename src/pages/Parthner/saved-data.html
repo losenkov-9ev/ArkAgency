@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../../app/head.html', {"title": "parthner"})
+  <body class="parthner-page parthner-page-saved">
+    <div class="wrapper">
+      <!-- Header section -->
+      @@include('../../entities/Header/index.html')
+      @@include('../../entities/MenuModal/index.html')
+
+      <div class="parthner__box container">
+        @@include('../../shared/SectionHead/index.html', {
+          text: "личный офис"
+        })
+        <div class="parthner__box-inner">
+          @@include('../../widgets/ParthnerPage/ParthnerData/value.html')
+          @@include('../../widgets/ParthnerPage/ParthnerNews/index.html')
+        </div>
+        
+      </div>
+
+      <!-- Footer section -->
+      @@include('../../entities/Footer/index.html')
+
+      @@include('../../entities/Modal/ui/index.html')
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>

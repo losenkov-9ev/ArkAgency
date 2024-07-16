@@ -1,0 +1,58 @@
+.singleMobile {
+  display: none;
+  margin-top: 120px;
+
+  @media (max-width: $screen-lg) {
+    display: block;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    &__item + .singleMobile__item {
+      margin-top: 60px;
+    }
+
+    &__item-title {
+      font-size: 36px;
+      line-height: 114%;
+      margin-bottom: 10px;
+    }
+
+    &__item-text {
+      font-size: 24px;
+    }
+
+    &__item-number {
+      color: #fff;
+      flex: none;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1;
+      width: 99px;
+      height: 99px;
+      border-radius: 50%;
+      background-color: $light-accent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .defaultButton {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    &__item + .singleMobile__item {
+      margin-top: 30px;
+    }
+    &__item-title {
+      font-size: 26px;
+    }
+    &__item-text {
+      font-size: 18px;
+    }
+  }
+}

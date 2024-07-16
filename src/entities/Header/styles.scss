@@ -47,6 +47,9 @@
 
       display: inline-block;
 
+      &.active {
+        font-weight: 700;
+      }
       &:hover {
         text-decoration: underline;
         color: $light-accent;

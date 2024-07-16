@@ -1,0 +1,185 @@
+<div class="parthnerClients">
+  @@include('../ui/ParthnerTabs/index.html', {
+    tab: "clients"
+  })
+
+  <div class="parthnerClients__promo">
+    <div class="parthnerClients__promo-title">
+      Мой промокод
+    </div>
+    <div class="parthnerClients__promo-field">
+      <input type="text" class="parthnerClients__promo-input" disabled value="PROFCRM1">
+      <div class="parthnerClients__promo-controls">
+        <button>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11.5" fill="white" stroke="#9B2D30"/>
+            <path d="M11.608 15.516V7.884H12.742V15.516H11.608ZM8.26 12.24V11.178H16.09V12.24H8.26Z" fill="#9B2D30"/>
+          </svg>            
+        </button>
+        <button>
+          <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="4.28906" width="17.9474" height="19.2105" rx="4.5" fill="white" stroke="#9B2D30"/>
+            <rect x="4.28906" y="0.5" width="17.9474" height="19.2105" rx="4.5" fill="#9B2D30" stroke="#9B2D30"/>
+          </svg>  
+        </button>
+      </div>
+    </div>
+    <div class="parthnerClients__promo-text">
+      Передайте этот промокод клиенту, чтобы мы знали, что он пришёл от Вас
+    </div>
+  </div>
+  <div class="parthnerClients__faq">
+    <div class="parthnerClients__faq-item opened">
+      <div class="parthnerClients__faq-item-head">
+        Иванов Иван Иванович
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M19.6918 19.6436C20.2435 19.6165 20.6686 19.1473 20.6415 18.5957L20.1994 9.60657C20.1722 9.05495 19.7031 8.62977 19.1514 8.6569C18.5998 8.68403 18.1746 9.1532 18.2018 9.70482L18.5948 17.6952L10.6045 18.0882C10.0528 18.1153 9.62765 18.5845 9.65479 19.1361C9.68192 19.6877 10.1511 20.1129 10.7027 20.0858L19.6918 19.6436ZM8.32849 9.74099L18.9712 19.3858L20.3142 17.9038L9.67151 8.25901L8.32849 9.74099Z" fill="white"/>
+          </svg>
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M20.4994 9.23446C20.5184 8.68251 20.0864 8.21963 19.5345 8.20059L10.5398 7.89043C9.98785 7.8714 9.52497 8.30342 9.50594 8.85538C9.48691 9.40733 9.91893 9.87021 10.4709 9.88925L18.4661 10.1649L18.1904 18.1602C18.1714 18.7121 18.6034 19.175 19.1554 19.1941C19.7073 19.2131 20.1702 18.7811 20.1892 18.2291L20.4994 9.23446ZM9.68232 19.7311L20.1823 9.93106L18.8177 8.46894L8.31768 18.2689L9.68232 19.7311Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content" style="display: block; opacity: 1;">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Обращение в ArkAgency",
+              date: "10.05.2024"
+            },
+            {
+              text: "Проведена презентация с офером",
+              date: "11.05.2024"
+            },
+            {
+              text: "Подготовка документации",
+              date: "12.05.2024"
+            },
+            {
+              text: "Продолжение следует ...",
+              date: ""
+            }
+          ]
+        })
+      </div>
+    </div>
+    <div class="parthnerClients__faq-item">
+      <div class="parthnerClients__faq-item-head">
+        Петров Петр Петрович
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M19.6918 19.6436C20.2435 19.6165 20.6686 19.1473 20.6415 18.5957L20.1994 9.60657C20.1722 9.05495 19.7031 8.62977 19.1514 8.6569C18.5998 8.68403 18.1746 9.1532 18.2018 9.70482L18.5948 17.6952L10.6045 18.0882C10.0528 18.1153 9.62765 18.5845 9.65479 19.1361C9.68192 19.6877 10.1511 20.1129 10.7027 20.0858L19.6918 19.6436ZM8.32849 9.74099L18.9712 19.3858L20.3142 17.9038L9.67151 8.25901L8.32849 9.74099Z" fill="white"/>
+          </svg>
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M20.4994 9.23446C20.5184 8.68251 20.0864 8.21963 19.5345 8.20059L10.5398 7.89043C9.98785 7.8714 9.52497 8.30342 9.50594 8.85538C9.48691 9.40733 9.91893 9.87021 10.4709 9.88925L18.4661 10.1649L18.1904 18.1602C18.1714 18.7121 18.6034 19.175 19.1554 19.1941C19.7073 19.2131 20.1702 18.7811 20.1892 18.2291L20.4994 9.23446ZM9.68232 19.7311L20.1823 9.93106L18.8177 8.46894L8.31768 18.2689L9.68232 19.7311Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Обращение в ArkAgency",
+              date: "10.05.2024"
+            },
+            {
+              text: "Проведена презентация с офером",
+              date: "11.05.2024"
+            },
+            {
+              text: "Подготовка документации",
+              date: "12.05.2024"
+            },
+            {
+              text: "Продолжение следует ...",
+              date: ""
+            }
+          ]
+        })
+      </div>
+    </div>
+    <div class="parthnerClients__faq-item">
+      <div class="parthnerClients__faq-item-head">
+        Сидоров Петр Петрович
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M19.6918 19.6436C20.2435 19.6165 20.6686 19.1473 20.6415 18.5957L20.1994 9.60657C20.1722 9.05495 19.7031 8.62977 19.1514 8.6569C18.5998 8.68403 18.1746 9.1532 18.2018 9.70482L18.5948 17.6952L10.6045 18.0882C10.0528 18.1153 9.62765 18.5845 9.65479 19.1361C9.68192 19.6877 10.1511 20.1129 10.7027 20.0858L19.6918 19.6436ZM8.32849 9.74099L18.9712 19.3858L20.3142 17.9038L9.67151 8.25901L8.32849 9.74099Z" fill="white"/>
+          </svg>
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M20.4994 9.23446C20.5184 8.68251 20.0864 8.21963 19.5345 8.20059L10.5398 7.89043C9.98785 7.8714 9.52497 8.30342 9.50594 8.85538C9.48691 9.40733 9.91893 9.87021 10.4709 9.88925L18.4661 10.1649L18.1904 18.1602C18.1714 18.7121 18.6034 19.175 19.1554 19.1941C19.7073 19.2131 20.1702 18.7811 20.1892 18.2291L20.4994 9.23446ZM9.68232 19.7311L20.1823 9.93106L18.8177 8.46894L8.31768 18.2689L9.68232 19.7311Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Обращение в ArkAgency",
+              date: "10.05.2024"
+            },
+            {
+              text: "Проведена презентация с офером",
+              date: "11.05.2024"
+            },
+            {
+              text: "Подготовка документации",
+              date: "12.05.2024"
+            },
+            {
+              text: "Продолжение следует ...",
+              date: ""
+            }
+          ]
+        })
+      </div>
+    </div>
+    <div class="parthnerClients__faq-item">
+      <div class="parthnerClients__faq-item-head">
+        Морозова Мария Игоревна
+  
+        <div class="parthnerClients__faq-item-headIcon">
+          <svg class="parthnerClients__faq-item-headIcon--closed" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M19.6918 19.6436C20.2435 19.6165 20.6686 19.1473 20.6415 18.5957L20.1994 9.60657C20.1722 9.05495 19.7031 8.62977 19.1514 8.6569C18.5998 8.68403 18.1746 9.1532 18.2018 9.70482L18.5948 17.6952L10.6045 18.0882C10.0528 18.1153 9.62765 18.5845 9.65479 19.1361C9.68192 19.6877 10.1511 20.1129 10.7027 20.0858L19.6918 19.6436ZM8.32849 9.74099L18.9712 19.3858L20.3142 17.9038L9.67151 8.25901L8.32849 9.74099Z" fill="white"/>
+          </svg>
+          <svg class="parthnerClients__faq-item-headIcon--opened" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#9B2D30"/>
+            <path d="M20.4994 9.23446C20.5184 8.68251 20.0864 8.21963 19.5345 8.20059L10.5398 7.89043C9.98785 7.8714 9.52497 8.30342 9.50594 8.85538C9.48691 9.40733 9.91893 9.87021 10.4709 9.88925L18.4661 10.1649L18.1904 18.1602C18.1714 18.7121 18.6034 19.175 19.1554 19.1941C19.7073 19.2131 20.1702 18.7811 20.1892 18.2291L20.4994 9.23446ZM9.68232 19.7311L20.1823 9.93106L18.8177 8.46894L8.31768 18.2689L9.68232 19.7311Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="faq__item-content parthnerClients__faq-item-content">
+        @@include('../ui/ParthnerList/index.html', {
+          items: [
+            {
+              text: "Обращение в ArkAgency",
+              date: "10.05.2024"
+            },
+            {
+              text: "Проведена презентация с офером",
+              date: "11.05.2024"
+            },
+            {
+              text: "Подготовка документации",
+              date: "12.05.2024"
+            },
+            {
+              text: "Продолжение следует ...",
+              date: ""
+            }
+          ]
+        })
+      </div>
+    </div>
+  </div>
+</div>

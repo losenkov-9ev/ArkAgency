@@ -9,6 +9,27 @@
 
   margin-bottom: 120px;
 
+  &.form--cooperation {
+    .form__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 45px;
+    }
+    .form__title {
+      text-align: left;
+      margin-bottom: 60px;
+    }
+    .form__inputWrapper {
+      flex-direction: column;
+      max-width: 682px;
+    }
+    .defaultButton {
+      text-transform: none;
+    }
+  }
+
   &__title {
     text-align: center;
     font-size: 48px;
@@ -52,6 +73,30 @@
     }
   }
 
+  @media (max-width: $screen-md) {
+    &.form--cooperation {
+      .form__box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .form__title {
+        text-align: left;
+        margin-bottom: 60px;
+      }
+      .form__inputWrapper {
+        flex-direction: column;
+        max-width: 100%;
+        input {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      .defaultButton {
+        padding: 20px 0 !important;
+      }
+    }
+  }
   @media (max-width: $screen-sm) {
     &__inputWrapper {
       flex-direction: column;

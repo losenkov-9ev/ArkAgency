@@ -9,6 +9,7 @@ export const reviewsSliderConfig = {
     nextEl: '.reviews__controls-arrow--next',
     prevEl: '.reviews__controls-arrow--prev',
   },
+
   slidesPerView: 3,
   spaceBetween: 20,
 

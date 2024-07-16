@@ -41,6 +41,21 @@
   &.top--statistics .top__inner {
     align-items: center;
   }
+  &.top--cooperation .top__content {
+    max-width: 756px;
+  }
+  &.top--cooperation .top__inner {
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &.top--cooperation .defaultButton {
+    padding: 25px;
+    text-transform: none;
+  }
+  &.top--cooperation .top__content-buttons--mobile {
+    display: none;
+  }
+
   &__title {
     span {
       color: $light-accent;
@@ -121,17 +136,26 @@
     justify-content: space-between;
   }
   &__info-benefitsItem {
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 114%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
 
     img {
       width: 96px;
       height: 96px;
       margin: 0 auto;
     }
+  }
+  &__content-buttons {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 756px;
+    width: 100%;
   }
 
   @media (max-width: $screen-md) {
@@ -159,6 +183,18 @@
         }
       }
     }
+    &.top--cooperation .top__content-buttons--mobile {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+
+      .defaultButton {
+        max-width: 100% !important;
+        width: 100%;
+      }
+    }
+
     &__inner {
       flex-direction: column;
     }

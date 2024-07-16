@@ -1,0 +1,110 @@
+.singleSteps {
+  margin-top: 120px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-of-type {
+      margin-bottom: 100px;
+      .singleSteps__item-button {
+        transform: translateY(40px);
+      }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+
+      .singleSteps__item-info {
+        margin-left: 30px;
+        &::before {
+          right: auto;
+          left: 100%;
+        }
+      }
+      .singleSteps__item-type {
+        margin-left: 0;
+        transform: translateX(-10px);
+        svg {
+          transform: scale(-1, 1);
+        }
+      }
+    }
+  }
+  &__item + .singleSteps__item {
+    margin-top: 80px;
+  }
+  &__item-info {
+    max-width: 540px;
+    width: 100%;
+    border-radius: 28px;
+    border: 2px solid #909090;
+    box-shadow: 3.64px 4.85px 6.06px 0px rgba(#000, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    position: relative;
+    font-size: 18px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 100%;
+      width: 120px;
+      height: 2px;
+      background-color: #909090;
+    }
+  }
+  &__item-icon {
+    position: relative;
+    width: 126px;
+    height: 126px;
+    flex: none;
+    z-index: 10;
+    margin-top: -20px;
+  }
+  &__item-type {
+    height: 75px;
+    max-width: 558px;
+    transform: translateX(45px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    span {
+      position: relative;
+      z-index: 10;
+    }
+
+    svg {
+      position: absolute;
+      top: -16px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__item-button {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 540px;
+    width: 100%;
+
+    .singleSteps__item-info {
+      margin-left: auto;
+    }
+    .defaultButton {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    display: none;
+  }
+}

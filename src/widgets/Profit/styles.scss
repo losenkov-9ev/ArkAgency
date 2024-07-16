@@ -67,6 +67,9 @@
       font-size: 36px;
       line-height: 1.2;
     }
+    &-contentText {
+      text-transform: lowercase;
+    }
   }
 
   @media (max-width: $screen-lg) {

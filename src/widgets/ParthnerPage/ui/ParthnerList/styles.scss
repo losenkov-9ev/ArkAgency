@@ -1,0 +1,45 @@
+.parthnerList {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    bottom: 14px;
+    left: 2px;
+    width: 1px;
+    background-color: #909090;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 8px;
+
+    max-width: 100%;
+    width: 100%;
+
+    font-size: 20px;
+
+    padding-left: 18px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $accent;
+    }
+  }
+  &__item + .parthnerList__item {
+    margin-top: 10px;
+  }
+}

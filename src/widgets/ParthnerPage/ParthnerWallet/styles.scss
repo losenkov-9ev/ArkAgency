@@ -1,0 +1,38 @@
+.parthnerWallet {
+  &__faq-title {
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+
+  .parthnerClients__faq {
+    margin-left: 30px;
+  }
+  .parthnerClients__faq-item-head {
+    font-size: 20px;
+    font-weight: 400 !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    align-items: center;
+  }
+  .parthnerClients__faq-item:not(.opened) .parthnerClients__faq-item-headIcon--closed {
+    margin-bottom: -3px;
+  }
+
+  &__faq-price {
+    font-weight: 500;
+    margin-left: 60px;
+  }
+
+  &__checkout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__faq-date {
+    font-weight: 700;
+  }
+}

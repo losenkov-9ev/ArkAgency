@@ -1,0 +1,115 @@
+.parthnerClients {
+  padding-right: 64px;
+  border-right: 2px solid #606060;
+
+  &__promo {
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 60px;
+
+    &-title {
+      font-size: 24px;
+      line-height: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    &-field {
+      max-width: 406px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    &-input {
+      max-width: 100%;
+      width: 100%;
+      background-color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 11px 22px;
+      padding-right: 50px;
+    }
+    &-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 100%;
+      width: 100%;
+      .defaultButton {
+        padding: 9px;
+      }
+    }
+    &-controls {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      top: 50%;
+      transform: translateY(-40%);
+      right: 20px;
+
+      button {
+        background-color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    &-text {
+      font-size: 15px;
+    }
+  }
+
+  &__faq {
+    &-item {
+      padding-bottom: 0px;
+      border: none;
+      cursor: pointer;
+
+      &.opened {
+        margin-bottom: 30px;
+
+        .parthnerClients__faq-item-headIcon--opened {
+          display: block;
+        }
+        .parthnerClients__faq-item-headIcon--closed {
+          display: none;
+        }
+        .parthnerClients__faq-item-content {
+          line-height: 29px;
+        }
+        .parthnerClients__faq-item-head {
+          font-weight: 700;
+        }
+      }
+    }
+    &-item-head {
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 24px;
+      line-height: 114%;
+      color: $text;
+      text-transform: none;
+      padding-bottom: 5px;
+      font-weight: 400;
+    }
+
+    &-item-headIcon--opened {
+      display: none;
+    }
+    &-item-content {
+      line-height: 0px;
+      font-size: 24px;
+      opacity: 0;
+      transition: all 0.3s;
+      padding-left: 30px;
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    border: none;
+    padding: 0;
+  }
+}
